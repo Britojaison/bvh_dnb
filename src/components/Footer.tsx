@@ -121,8 +121,8 @@ export default function Footer() {
           <p>&copy; 2026 Bhaktivedanta Hospital &amp; Research Institute. All rights reserved.</p>
           <div className="flex items-center space-x-6">
             <span>DNB &amp; DrNB Academic Section</span>
-            <Link href="/education/dnb-drnb/nbems-mandatory-disclosures" className="hover:underline text-slate-300">
-              Mandatory Disclosures
+            <Link href="/education/dnb-drnb/nbems-mandatory-disclosures" className="hover:underline text-[#D5E8F0] font-medium">
+              NBEMS Mandatory Disclosures
             </Link>
             <a href="https://www.bhaktivedantahospital.com" target="_blank" rel="noreferrer" className="hover:underline text-[#D5E8F0]">
               Hospital Main Site &rarr;

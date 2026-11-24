@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import MobileStickyApply from "@/components/MobileStickyApply";
+import LateralProgrammesMenu from "@/components/LateralProgrammesMenu";
 
 export const metadata: Metadata = {
   title: "DNB & DrNB Postgraduate Medical Programmes | Bhaktivedanta Hospital & Research Institute",
@@ -23,7 +24,11 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased font-sans text-[#1A1A1A] bg-white selection:bg-[#D5E8F0] selection:text-[#1F3864]">
+        {/* Persistent left/side 'Programmes' menu listing all eight spokes on every page for quick lateral movement */}
+        <LateralProgrammesMenu />
+        
         {children}
+        
         {/* Spec 5.10 & 8: Sticky 'Apply / Enquire' button on mobile (< 768px) */}
         <MobileStickyApply />
       </body>

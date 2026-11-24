@@ -20,6 +20,13 @@ export default function Header() {
               <ShieldCheck className="w-3.5 h-3.5 text-[#C8862B]" />
               NABH &amp; NABL Accredited Hospital
             </span>
+            <span className="hidden lg:inline opacity-30">|</span>
+            <Link
+              href="/education/dnb-drnb/nbems-mandatory-disclosures"
+              className="hidden lg:inline-flex items-center gap-1 text-[#D5E8F0] hover:text-white font-medium underline underline-offset-2 transition"
+            >
+              NBEMS Mandatory Disclosures
+            </Link>
           </div>
 
           <div className="flex items-center space-x-4 text-xs text-slate-200">
