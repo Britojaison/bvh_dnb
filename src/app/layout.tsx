@@ -24,8 +24,8 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased font-sans text-[#1A1A1A] bg-white selection:bg-[#D5E8F0] selection:text-[#1F3864]">
-        {/* Persistent left/side 'Programmes' menu listing all eight spokes on every page for quick lateral movement */}
-        <LateralProgrammesMenu />
+        {/* Persistent left/side 'Programmes' menu listing all eight spokes on every page for quick lateral movement (commented out per user request; ready to re-enable anytime) */}
+        {/* <LateralProgrammesMenu /> */}
         
         {children}
         

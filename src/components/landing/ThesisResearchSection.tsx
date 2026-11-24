@@ -43,56 +43,64 @@ export default function ThesisResearchSection() {
             </p>
           </div>
 
-          {/* 5-Step Thesis Journey Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            {steps.map((st, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-6 rounded-2xl border border-gray-200/90 shadow-sm flex flex-col justify-between hover:border-[#2E75B6] transition group"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="w-8 h-8 rounded-full bg-[#EAF0F7] text-[#1F3864] flex items-center justify-center font-bold text-sm font-mono group-hover:bg-[#1F3864] group-hover:text-white transition">
-                      0{st.num}
-                    </span>
-                    <CheckCircle2 className="w-5 h-5 text-[#2E75B6]" />
+          {/* 5-Step Thesis Journey Cards: 3 on top row, 2 centered on second row */}
+          <div className="space-y-6 mb-10">
+            {/* Top row: Steps 1, 2, 3 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {steps.slice(0, 3).map((st, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gradient-to-br from-[#1F3864] to-[#14233e] text-white p-6 sm:p-7 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="w-9 h-9 rounded-full bg-white text-[#1F3864] flex items-center justify-center font-bold text-sm font-mono shadow">
+                        0{st.num}
+                      </span>
+                    </div>
+                    <h3 className="font-serif font-bold text-base sm:text-lg text-white mb-2 leading-snug">
+                      {st.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal">
+                      {st.desc}
+                    </p>
                   </div>
-                  <h3 className="font-serif font-bold text-base sm:text-lg text-[#1F3864] mb-2 leading-snug">
-                    {st.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-[#595959] leading-relaxed">
-                    {st.desc}
-                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
 
-            {/* Research Support Card */}
-            <div className="bg-gradient-to-br from-[#1F3864] to-[#14233e] text-white p-6 rounded-2xl shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center mb-4 text-[#C8862B]">
-                  <Microscope className="w-5 h-5" />
+            {/* Bottom row: Steps 4 and 5 centered */}
+            <div className="flex flex-col md:flex-row justify-center gap-6">
+              {steps.slice(3, 5).map((st, idx) => (
+                <div
+                  key={idx}
+                  className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-gradient-to-br from-[#1F3864] to-[#14233e] text-white p-6 sm:p-7 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="w-9 h-9 rounded-full bg-white text-[#1F3864] flex items-center justify-center font-bold text-sm font-mono shadow">
+                        0{st.num}
+                      </span>
+                    </div>
+                    <h3 className="font-serif font-bold text-base sm:text-lg text-white mb-2 leading-snug">
+                      {st.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal">
+                      {st.desc}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="font-serif font-bold text-base sm:text-lg text-white mb-2 leading-snug">
-                  Medical Research Department
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                  Dual registered Institutional Ethics Committees (IEC) recognized by CDSCO &amp; DHR with extensive GCP clinical trial experience.
-                </p>
-              </div>
-              <span className="text-[11px] text-[#D5E8F0] font-mono mt-4 block">
-                Dedicated Biostatistical Mentorship
-              </span>
+              ))}
             </div>
           </div>
 
           {/* Research Scale Statement Placeholder (Spec §11) */}
-          <div className="p-5 bg-[#FFFBF3] border-l-4 border-[#C8862B] rounded-r-xl shadow-sm">
+          <div className="p-5 bg-white border border-[#D2DCE8] rounded-xl shadow-sm">
             <h4 className="font-serif font-bold text-sm text-[#1F3864] mb-1">
               BVH Institutional Research Scale:
             </h4>
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-              [ <em>Add a one-line statement of BVH's research scale once confirmed — e.g. number of publications, ongoing trials, research staff — placeholders.</em> ]
+              [ <em>Add a one-line statement of BVH&apos;s research scale once confirmed — e.g. number of publications, ongoing trials, research staff — placeholders.</em> ]
             </p>
           </div>
         </div>

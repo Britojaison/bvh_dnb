@@ -197,10 +197,7 @@ export default function AdmissionPathway() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {/* 1. Broad-specialty DNB & Diploma */}
             <div className="bg-[#EAF0F7]/40 p-6 sm:p-7 rounded-2xl border border-gray-200">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 rounded-lg bg-white text-[#2E75B6] flex items-center justify-center shadow-sm">
-                  <GraduationCap className="w-5 h-5" />
-                </div>
+              <div className="mb-4">
                 <h3 className="font-serif font-bold text-base sm:text-lg text-[#1F3864]">
                   Broad-specialty DNB &amp; Diploma
                 </h3>
@@ -223,10 +220,7 @@ export default function AdmissionPathway() {
 
             {/* 2. Super-specialty DrNB */}
             <div className="bg-[#EAF0F7]/40 p-6 sm:p-7 rounded-2xl border border-gray-200">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 rounded-lg bg-white text-purple-700 flex items-center justify-center shadow-sm">
-                  <Award className="w-5 h-5" />
-                </div>
+              <div className="mb-4">
                 <h3 className="font-serif font-bold text-base sm:text-lg text-[#1F3864]">
                   Super-specialty DrNB
                 </h3>
@@ -249,10 +243,7 @@ export default function AdmissionPathway() {
 
             {/* 3. Post-diploma DNB */}
             <div className="bg-[#EAF0F7]/40 p-6 sm:p-7 rounded-2xl border border-gray-200">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 rounded-lg bg-white text-amber-700 flex items-center justify-center shadow-sm">
-                  <Layers className="w-5 h-5" />
-                </div>
+              <div className="mb-4">
                 <h3 className="font-serif font-bold text-base sm:text-lg text-[#1F3864]">
                   Post-diploma DNB
                 </h3>
@@ -271,21 +262,23 @@ export default function AdmissionPathway() {
           </div>
 
           {/* Seat Categories (for awareness) Card */}
-          <div className="p-6 sm:p-7 bg-[#FFFBF3] border-l-4 border-[#C8862B] rounded-r-xl shadow-sm">
-            <h3 className="font-serif font-bold text-base text-[#1F3864] mb-3">
+          <div className="mt-8 p-6 bg-white rounded-xl border border-[#D2DCE8] shadow-sm">
+            <h4 className="font-serif font-bold text-base text-[#1F3864] mb-3">
               Seat categories (for awareness)
-            </h3>
-            <div className="space-y-2.5 text-xs sm:text-sm text-gray-800 leading-relaxed">
-              <p>
-                <strong>All-India Open seats:</strong> The route applicable to candidates joining a private accredited institution such as BVH.
-              </p>
-              <p>
-                <strong>In-service and Sponsored seats:</strong> Applicable at eligible Government / PSU / Railway / ESIC institutions for their in-service candidates.
-              </p>
-              <p className="text-gray-600 pt-1 border-t border-[#C8862B]/20">
-                Reservation, where applicable, follows the Government of India's policy; the seat matrix and the detailed counselling handbook are published by MCC/NBEMS at the time of each counselling cycle.
-              </p>
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-gray-100 text-xs sm:text-sm text-[#1C2D4A]">
+              <div className="p-3.5 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
+                <span className="font-semibold text-[#1F3864] block mb-1">All-India Open seats:</span>
+                <span className="text-gray-700">The route applicable to candidates joining a private accredited institution such as BVH.</span>
+              </div>
+              <div className="p-3.5 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
+                <span className="font-semibold text-[#1F3864] block mb-1">In-service and Sponsored seats:</span>
+                <span className="text-gray-700">Applicable at eligible Government / PSU / Railway / ESIC institutions for their in-service candidates.</span>
+              </div>
             </div>
+            <p className="text-xs text-gray-500 pt-3 mt-3 border-t border-gray-100 leading-relaxed">
+              Reservation, where applicable, follows the Government of India&apos;s policy; the seat matrix and the detailed counselling handbook are published by MCC/NBEMS at the time of each counselling cycle.
+            </p>
           </div>
         </div>
       </div>

@@ -109,9 +109,6 @@ export default function StatsBand() {
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight">
               Clinical Stats &amp; Infrastructure
             </h2>
-            <p className="text-xs sm:text-sm text-[#595959] mt-2">
-              Headline metrics at a glance — delivering high clinical volumes and procedural diversity for postgraduate medical residents.
-            </p>
           </div>
 
           {/* 
@@ -154,28 +151,31 @@ export default function StatsBand() {
           </div>
 
           {/* Bottom Card: Supplementary Figures to be supplied by BVH */}
-          <div className="bg-[#EAF0F7]/40 rounded-2xl p-6 border border-[#D5E8F0]">
-            <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-200">
-              <Sparkles className="w-4 h-4 text-[#C8862B]" />
+          <div className="bg-[#EAF0F7]/40 rounded-2xl p-6 sm:p-8 border border-[#D5E8F0]">
+            <div className="mb-6 pb-3 border-b border-gray-200">
               <h3 className="font-serif font-bold text-sm text-[#1F3864] uppercase tracking-wider">
-                Figures to be supplied by BVH (no prior published base to apply +10%)
+                Figures to be supplied by BVH
               </h3>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3.5">
               {BVH_SUPPLIED_PLACEHOLDERS.map((pl, idx) => {
                 const Icon = pl.icon;
                 return (
                   <div
                     key={idx}
-                    className="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between"
+                    className="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between min-h-[110px] hover:border-[#2E75B6]/50 transition"
                   >
-                    <div className="flex items-center gap-2 text-[#1F3864] mb-2">
-                      <Icon className="w-4 h-4 text-[#C8862B]" />
-                      <span className="text-xs font-medium text-gray-800">{pl.label}</span>
+                    <div className="flex items-start gap-2 text-[#1F3864] mb-3">
+                      <Icon className="w-4 h-4 text-[#C8862B] flex-shrink-0 mt-0.5" />
+                      <span className="text-xs font-semibold text-[#1C2D4A] leading-snug line-clamp-2">
+                        {pl.label}
+                      </span>
                     </div>
-                    <span className="font-mono text-xs text-[#2E75B6] bg-[#EAF0F7] px-2 py-1 rounded text-center font-semibold">
-                      {pl.placeholder}
-                    </span>
+                    <div className="w-full">
+                      <span className="block font-mono text-[11px] text-[#2E75B6] bg-[#EAF0F7] py-1.5 px-2 rounded-md text-center font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
+                        {pl.placeholder}
+                      </span>
+                    </div>
                   </div>
                 );
               })}

@@ -96,9 +96,6 @@ export default function ProgrammesTable() {
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight">
               Programmes at a Glance
             </h2>
-            <p className="text-sm text-[#595959] mt-2">
-              All broad-specialty, diploma, and super-specialty training seats are allotted strictly on merit through national centralised counselling.
-            </p>
           </div>
 
           {/* Desktop Responsive Table (hidden on mobile) */}
@@ -119,38 +116,25 @@ export default function ProgrammesTable() {
                   {PROGRAMMES_DATA.map((row) => (
                     <tr
                       key={row.slug}
-                      className="hover:bg-[#EAF0F7] transition cursor-pointer group"
+                      className="hover:bg-gray-50/70 transition"
                     >
                       <td className="py-3.5 px-5 font-bold text-[#1F3864] border-r border-gray-200">
-                        <Link href={row.slug} className="block w-full group-hover:text-[#2E75B6] group-hover:underline">
-                          {row.specialty}
-                        </Link>
+                        {row.specialty}
                       </td>
                       <td className="py-3.5 px-5 font-medium border-r border-gray-200">
-                        <Link href={row.slug} className="block w-full group-hover:text-[#2E75B6]">
-                          {row.programme}
-                        </Link>
+                        {row.programme}
                       </td>
                       <td className="py-3.5 px-5 border-r border-gray-200">
-                        <Link href={row.slug} className="block w-full">
-                          {row.level}
-                        </Link>
+                        {row.level}
                       </td>
                       <td className="py-3.5 px-5 border-r border-gray-200">
-                        <Link href={row.slug} className="block w-full">
-                          {row.duration}
-                        </Link>
+                        {row.duration}
                       </td>
                       <td className="py-3.5 px-5 text-[#595959] font-mono border-r border-gray-200">
-                        <Link href={row.slug} className="block w-full">
-                          {row.seats}
-                        </Link>
+                        {row.seats}
                       </td>
                       <td className="py-3.5 px-5 font-mono font-semibold text-[#1F3864]">
-                        <Link href={row.slug} className="flex items-center justify-between w-full group-hover:text-[#2E75B6]">
-                          <span>{row.entrance}</span>
-                          <ExternalLink className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity ml-1 text-[#2E75B6]" />
-                        </Link>
+                        {row.entrance}
                       </td>
                     </tr>
                   ))}
@@ -162,13 +146,12 @@ export default function ProgrammesTable() {
           {/* Mobile Collapsible Stacked Cards (Spec 5.2: Collapses to stacked cards, one card per programme) */}
           <div className="md:hidden space-y-4">
             {PROGRAMMES_DATA.map((row) => (
-              <Link
+              <div
                 key={row.slug}
-                href={row.slug}
-                className="block bg-white rounded-xl border border-gray-300 p-5 shadow-sm hover:border-[#2E75B6] hover:shadow-md transition group"
+                className="bg-white rounded-xl border border-gray-300 p-5 shadow-sm"
               >
                 <div className="flex items-start justify-between mb-2">
-                  <span className="font-serif font-bold text-base text-[#1F3864] group-hover:text-[#2E75B6] transition">
+                  <span className="font-serif font-bold text-base text-[#1F3864]">
                     {row.programme}
                   </span>
                   <span className="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-[#EAF0F7] text-[#1F3864]">
@@ -194,11 +177,7 @@ export default function ProgrammesTable() {
                     <span className="font-mono text-[#595959]">{row.seats}</span>
                   </div>
                 </div>
-
-                <div className="mt-3 pt-2 flex items-center justify-end text-xs font-semibold text-[#2E75B6] group-hover:translate-x-0.5 transition-transform">
-                  <span>View Specialty Details &rarr;</span>
-                </div>
-              </Link>
+              </div>
             ))}
           </div>
 

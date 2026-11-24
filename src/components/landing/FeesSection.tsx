@@ -9,17 +9,17 @@ export default function FeesSection() {
               Fees &amp; Financial Transparency
             </h2>
 
-            <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
+            <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] font-normal leading-relaxed">
               <p>
                 Course fees for NBEMS programmes are standardised nationally, fixed and collected by NBEMS — they are uniform across accredited institutions for a given session.
               </p>
               <p>
                 Fee heads comprise tuition, library and annual appraisal charges, plus accommodation charges (only where accommodation is provided) and GST at the prevailing rate.
               </p>
-              <p className="text-sm sm:text-base text-[#595959] italic">
+              <p>
                 Indicative amounts: [ insert current figures as per the latest NBEMS bulletin — verify. The NBEMS manuals in our project quote differing tuition figures, so the published number must be confirmed before going live. ]
               </p>
-              <p className="font-semibold text-[#1F3864]">
+              <p>
                 Accredited hospitals cannot charge any capitation fee, security deposit, security bond or caution deposit in any form — an important assurance of fair, transparent admission.
               </p>
             </div>
@@ -27,13 +27,10 @@ export default function FeesSection() {
 
           {/* Small Clearly Captioned Fees Table */}
           <div className="bg-white rounded-xl border border-gray-300 shadow-sm overflow-hidden mb-3">
-            <div className="bg-[#1F3864] text-white py-3.5 px-6 flex items-center justify-between">
+            <div className="bg-[#1F3864] text-white py-3.5 px-6">
               <h3 className="font-serif font-bold text-sm sm:text-base">
                 NBEMS Standardised Course Fee Heads
               </h3>
-              <span className="text-xs text-[#D5E8F0] font-mono">
-                fees as fixed by NBEMS
-              </span>
             </div>
 
             <div className="overflow-x-auto">

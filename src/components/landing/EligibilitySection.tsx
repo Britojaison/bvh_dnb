@@ -10,9 +10,6 @@ export default function EligibilitySection() {
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight">
               Eligibility
             </h2>
-            <p className="text-sm text-[#595959] mt-2">
-              National eligibility requirements prescribed by NBEMS and the National Medical Commission (NMC) for postgraduate and super-specialty medical admissions.
-            </p>
           </div>
 
           {/* 3 Eligibility Category Cards */}
@@ -20,10 +17,7 @@ export default function EligibilitySection() {
             {/* Card 1: Broad-specialty DNB & Diploma (Post-MBBS) */}
             <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#EAF0F7] text-[#1F3864] flex items-center justify-center font-bold">
-                    <GraduationCap className="w-5 h-5 text-[#2E75B6]" />
-                  </div>
+                <div className="mb-4">
                   <h3 className="font-serif font-bold text-lg text-[#1F3864]">
                     Broad-specialty DNB and Diploma (Post-MBBS)
                   </h3>
@@ -52,10 +46,7 @@ export default function EligibilitySection() {
             {/* Card 2: Super-specialty DrNB (Urology, Cardiology) */}
             <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center font-bold">
-                    <Award className="w-5 h-5 text-purple-700" />
-                  </div>
+                <div className="mb-4">
                   <h3 className="font-serif font-bold text-lg text-[#1F3864]">
                     Super-specialty DrNB (Urology, Cardiology)
                   </h3>
@@ -76,10 +67,7 @@ export default function EligibilitySection() {
             {/* Card 3: Post-diploma DNB (where offered) */}
             <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-bold">
-                    <FileText className="w-5 h-5 text-amber-700" />
-                  </div>
+                <div className="mb-4">
                   <h3 className="font-serif font-bold text-lg text-[#1F3864]">
                     Post-diploma DNB (where offered)
                   </h3>

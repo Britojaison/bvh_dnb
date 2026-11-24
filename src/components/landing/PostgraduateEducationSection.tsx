@@ -14,11 +14,11 @@ export default function PostgraduateEducationSection() {
                 Postgraduate Medical Education at BVH
               </h2>
 
-              <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
+              <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] font-normal leading-relaxed">
                 <p>
                   Bhaktivedanta Hospital &amp; Research Institute conducts postgraduate and post-doctoral training accredited by the <strong>National Board of Examinations in Medical Sciences (NBEMS), New Delhi</strong>. Our programmes are designed to develop clinically excellent, ethically grounded and research-capable specialists who can deliver preventive, promotive, curative and rehabilitative care in their chosen field.
                 </p>
-                <p className="text-sm sm:text-base text-[#595959]">
+                <p>
                   Training at BVH combines mainstream, evidence-based clinical practice with a culture of academic rigour — structured bedside teaching, case presentations, seminars, journal clubs, grand rounds, clinical audits and continuing medical education — all delivered by senior, experienced faculty across a wide range of specialties and super-specialties under one roof.
                 </p>
               </div>

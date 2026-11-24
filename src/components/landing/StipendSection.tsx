@@ -38,13 +38,10 @@ export default function StipendSection() {
 
           {/* Stipend Table Card */}
           <div className="bg-white rounded-2xl border border-gray-300 shadow-sm overflow-hidden mb-8">
-            <div className="bg-[#1F3864] text-white py-3.5 px-6 flex items-center justify-between">
+            <div className="bg-[#1F3864] text-white py-3.5 px-6">
               <h3 className="font-serif font-bold text-sm sm:text-base">
                 NBEMS national minimum stipend (per month)
               </h3>
-              <span className="text-xs text-[#D5E8F0] font-mono">
-                Mandatory Floor Rate
-              </span>
             </div>
 
             <div className="overflow-x-auto">
@@ -80,16 +77,13 @@ export default function StipendSection() {
           </div>
 
           {/* BVH Stipend Policy Callout Card */}
-          <div className="p-6 bg-[#FFFBF3] border-l-4 border-[#C8862B] rounded-r-xl shadow-sm flex items-start gap-3">
-            <Coins className="w-6 h-6 text-[#C8862B] flex-shrink-0 mt-0.5" />
-            <div className="text-xs sm:text-sm text-gray-800 leading-relaxed space-y-1">
-              <h4 className="font-serif font-bold text-base text-[#1F3864]">
-                BVH stipend policy:
-              </h4>
-              <p>
-                [ <em>State whether BVH pays the NBEMS minimum, the Maharashtra State rate, or above — and any additional allowances. If BVH pays above the minimum, this should be highlighted prominently as a key advantage.</em> ]
-              </p>
-            </div>
+          <div className="p-6 bg-white border border-[#D2DCE8] rounded-xl shadow-sm">
+            <h4 className="font-serif font-bold text-base text-[#1F3864] mb-2">
+              BVH stipend policy:
+            </h4>
+            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-normal">
+              [ <em>State whether BVH pays the NBEMS minimum, the Maharashtra State rate, or above — and any additional allowances. If BVH pays above the minimum, this should be highlighted prominently as a key advantage.</em> ]
+            </p>
           </div>
         </div>
       </div>

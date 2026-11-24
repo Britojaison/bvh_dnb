@@ -25,8 +25,7 @@ export default function ProgrammeDurationSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left 5 Cols: Programme Duration Table */}
             <div className="lg:col-span-5 bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-              <div className="bg-[#1F3864] text-white py-3.5 px-6 flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#C8862B]" />
+              <div className="bg-[#1F3864] text-white py-3.5 px-6">
                 <h3 className="font-serif font-bold text-sm uppercase tracking-wider">
                   Programme Durations
                 </h3>
@@ -54,9 +53,10 @@ export default function ProgrammeDurationSection() {
                   </tbody>
                 </table>
 
-                <div className="mt-6 p-4 bg-[#FFFBF3] border-l-4 border-[#C8862B] rounded-r-lg text-xs text-gray-700 leading-relaxed">
+                <div className="mt-6 p-4 rounded-xl bg-[#EAF0F7]/40 border border-[#D2DCE8]/70 text-xs text-[#1C2D4A] leading-relaxed flex items-start gap-2.5">
+                  <Clock className="w-4 h-4 text-[#1F3864] flex-shrink-0 mt-0.5" />
                   <p>
-                    Training period is counted from the date of joining. Excess leave beyond prescribed NBEMS guidelines extends the course duration accordingly.
+                    <strong>Note:</strong> Training period is counted from the date of joining. Excess leave beyond prescribed NBEMS guidelines extends the course duration accordingly.
                   </p>
                 </div>
               </div>
@@ -64,10 +64,7 @@ export default function ProgrammeDurationSection() {
 
             {/* Right 7 Cols: How Training is Delivered */}
             <div className="lg:col-span-7 bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-8">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-9 h-9 rounded-lg bg-[#EAF0F7] text-[#1F3864] flex items-center justify-center">
-                  <Compass className="w-5 h-5 text-[#2E75B6]" />
-                </div>
+              <div className="mb-6">
                 <h3 className="font-serif font-bold text-xl text-[#1F3864]">
                   How training is delivered
                 </h3>
@@ -101,16 +98,6 @@ export default function ProgrammeDurationSection() {
                     Every trainee maintains the mandatory e-Doctor Logbook of cases and academic activities, reviewed regularly by the assigned guide/mentor.
                   </span>
                 </div>
-              </div>
-
-              {/* Specialty Spoke Note */}
-              <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-xl text-xs text-[#595959] flex items-center justify-between">
-                <span>
-                  <strong>Department Specifics:</strong> Each specialty page features its own departmental weekly teaching schedule table and <em>Year 1 &rarr; Year 3</em> training timeline.
-                </span>
-                <a href="#programmes" className="text-[#2E75B6] font-semibold hover:underline whitespace-nowrap ml-4">
-                  View Specialties &rarr;
-                </a>
               </div>
             </div>
           </div>

@@ -72,9 +72,6 @@ export default function WhyTrainSection() {
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight">
               Why Train at BVH
             </h2>
-            <p className="text-sm sm:text-base text-[#595959] mt-2">
-              Combining high clinical caseloads, mentor-led academic rigour, and a supportive, values-driven training ecosystem.
-            </p>
           </div>
 
           {/* Grid of Icon Cards: Heading + 1 Line (Instruction Spec §3 & §5.3) */}
@@ -101,23 +98,23 @@ export default function WhyTrainSection() {
           </div>
 
           {/* Numeric Claims to Confirm (Spec §3) */}
-          <div className="mt-12 p-6 bg-[#FFFBF3] border-l-4 border-[#C8862B] rounded-r-xl">
-            <h4 className="font-serif font-bold text-base text-[#1F3864] mb-2 flex items-center gap-2">
-              <Building className="w-5 h-5 text-[#C8862B]" />
-              Numeric Claims &bull; Institutional Differentiators
+          <div className="mt-12 p-6 bg-white rounded-xl border border-[#D2DCE8] shadow-sm">
+            <h4 className="font-serif font-bold text-base text-[#1F3864] mb-3 flex items-center gap-2">
+              <Building className="w-5 h-5 text-[#1F3864]" />
+              Numeric Claims
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4 pt-3 border-t border-[#C8862B]/20 text-xs text-[#595959]">
-              <div className="flex items-center gap-2.5">
-                <Bed className="w-4 h-4 text-[#C8862B] flex-shrink-0" />
-                <span><strong>Hospital Beds:</strong> [ Total beds — to be confirmed by BVH ]</span>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 border-t border-gray-100 text-xs text-[#595959]">
+              <div className="flex items-center gap-2.5 p-3 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
+                <Bed className="w-4 h-4 text-[#1F3864] flex-shrink-0" />
+                <span><strong className="text-[#1F3864]">Hospital Beds:</strong> [ Total beds — to be confirmed by BVH ]</span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Award className="w-4 h-4 text-[#C8862B] flex-shrink-0" />
-                <span><strong>Accredited Specialties:</strong> [ 8 DNB/DrNB/DRD Spokes ]</span>
+              <div className="flex items-center gap-2.5 p-3 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
+                <Award className="w-4 h-4 text-[#1F3864] flex-shrink-0" />
+                <span><strong className="text-[#1F3864]">Accredited Specialties:</strong> [ 8 DNB/DrNB/DRD Spokes ]</span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <GraduationCap className="w-4 h-4 text-[#C8862B] flex-shrink-0" />
-                <span><strong>Teaching Experience:</strong> [ Years of PG Teaching — to be supplied ]</span>
+              <div className="flex items-center gap-2.5 p-3 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
+                <GraduationCap className="w-4 h-4 text-[#1F3864] flex-shrink-0" />
+                <span><strong className="text-[#1F3864]">Teaching Experience:</strong> [ Years of PG Teaching — to be supplied ]</span>
               </div>
             </div>
           </div>
