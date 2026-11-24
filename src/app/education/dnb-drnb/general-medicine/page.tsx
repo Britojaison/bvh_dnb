@@ -133,7 +133,7 @@ export default function GeneralMedicineSpokePage() {
 
         {/* 1. Department Banner (§1) */}
         {/* Full-width banner: a teaching/ward photograph of the Internal Medicine department from the 10 July shoot. Overlay the title and one-line below. */}
-        <section className="relative w-full text-white overflow-hidden py-20 sm:py-28 lg:py-32 border-b-4 border-[#C8862B]">
+        <section className="relative w-full text-white overflow-hidden py-36 sm:py-48 lg:py-60 min-h-[580px] lg:min-h-[680px] flex items-center border-b-4 border-[#C8862B]">
           {/* Full-width background photograph */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -150,12 +150,8 @@ export default function GeneralMedicineSpokePage() {
           </div>
 
           {/* Overlaid Title and One-line positioning */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D5E8F0] text-xs font-semibold mb-6 border border-white/20 backdrop-blur-sm">
-                <Stethoscope className="w-3.5 h-3.5 text-[#C8862B]" />
-                NBEMS Accredited Broad Specialty
-              </span>
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl">
               
               {/* Page title */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-serif font-bold !text-white tracking-tight leading-[1.2] mb-6 drop-shadow-md">
@@ -163,25 +159,9 @@ export default function GeneralMedicineSpokePage() {
               </h1>
               
               {/* One-line positioning */}
-              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-3xl">
                 Three-year, NBEMS-accredited broad-specialty training in Internal Medicine, blending evidence-based practice with comprehensive, patient-centred care.
               </p>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href="#enquiry-form"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-lg bg-[#C8862B] text-white font-semibold text-sm sm:text-base hover:brightness-110 shadow-lg hover:shadow-xl transition group"
-                >
-                  <span>Apply / Enquire</span>
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a
-                  href="#programme-details"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-black/40 hover:bg-black/60 text-slate-100 hover:text-white border border-white/30 backdrop-blur-sm text-sm font-semibold transition"
-                >
-                  <span>Programme Overview &darr;</span>
-                </a>
-              </div>
             </div>
           </div>
         </section>
@@ -211,7 +191,7 @@ export default function GeneralMedicineSpokePage() {
                     <span>Integrated Medicine</span>
                   </h3>
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    BVH offers an integrated, whole-person approach to care that recognises the connection between physical, mental, emotional and spiritual well-being. Conventional medical treatment is combined, where appropriate and evidence-based, with modalities such as Ayurveda, Yoga, Naturopathy, Homeopathy and Nutrition, tailored to the individual. By addressing root causes and recommending personalised lifestyle modification, the goal is durable improvement, especially in chronic disease — always prioritising patient safety.
+                    BVH offers an integrated, whole-person approach to care that recognises the connection between physical, mental, emotional and spiritual well-being. Conventional medical treatment is combined, where appropriate and evidence-based, with modalities such as Ayurveda, Yoga, Naturopathy, Homeopathy and Nutrition, tailored to the individual. By addressing root causes and recommending personalised lifestyle modification, the goal is durable improvement, especially in chronic disease - always prioritising patient safety.
                   </p>
                 </div>
               </div>
@@ -275,7 +255,7 @@ export default function GeneralMedicineSpokePage() {
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Seats per session</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[seats — placeholder]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[seats - placeholder]</td>
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Entrance</td>
@@ -283,11 +263,11 @@ export default function GeneralMedicineSpokePage() {
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">NBEMS accreditation status</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[accredited since / validity — placeholder]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[accredited since / validity - placeholder]</td>
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Commencement session</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[January / July — confirm]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[January / July - confirm]</td>
                     </tr>
                   </tbody>
                 </table>
@@ -310,7 +290,7 @@ export default function GeneralMedicineSpokePage() {
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Seats per session</span>
-                <span className="text-sm font-mono text-[#595959]">[seats — placeholder]</span>
+                <span className="text-sm font-mono text-[#595959]">[seats - placeholder]</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Entrance</span>
@@ -318,11 +298,11 @@ export default function GeneralMedicineSpokePage() {
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">NBEMS accreditation status</span>
-                <span className="text-sm font-mono text-[#595959]">[accredited since / validity — placeholder]</span>
+                <span className="text-sm font-mono text-[#595959]">[accredited since / validity - placeholder]</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Commencement session</span>
-                <span className="text-sm font-mono text-[#595959]">[January / July — confirm]</span>
+                <span className="text-sm font-mono text-[#595959]">[January / July - confirm]</span>
               </div>
             </div>
 
@@ -407,7 +387,7 @@ export default function GeneralMedicineSpokePage() {
                     Fixed Academic Calendar
                   </h3>
                   <p className="text-sm leading-relaxed text-[#1A1A1A]">
-                    A fixed weekly academic calendar — rounds, case presentations, journal clubs, clinical audit and mortality meets.
+                    A fixed weekly academic calendar - rounds, case presentations, journal clubs, clinical audit and mortality meets.
                   </p>
                 </div>
               </div>
@@ -450,7 +430,7 @@ export default function GeneralMedicineSpokePage() {
                 <span>Numbers to confirm</span>
               </h3>
               <p className="text-xs sm:text-sm font-mono text-[#595959] bg-white p-3.5 rounded-lg border border-gray-200">
-                [ Add 2–3 department metrics — annual medical admissions, ICU exposure, OPD footfall — placeholders. ]
+                [ Add 2–3 department metrics - annual medical admissions, ICU exposure, OPD footfall - placeholders. ]
               </p>
             </div>
           </div>
@@ -512,7 +492,7 @@ export default function GeneralMedicineSpokePage() {
                   Common procedures residents are trained in:
                 </strong>
                 <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/30 p-3.5 rounded-lg border border-gray-200">
-                  [ list — placeholder ]
+                  [ list - placeholder ]
                 </p>
               </div>
             </div>
@@ -549,7 +529,7 @@ export default function GeneralMedicineSpokePage() {
                 <div className="p-5">
                   <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Bed Strength &amp; In-Patient Setup</span>
                   <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                    [ Medical wards &amp; bed strength — placeholder ]
+                    [ Medical wards &amp; bed strength - placeholder ]
                   </p>
                 </div>
               </div>
@@ -572,7 +552,7 @@ export default function GeneralMedicineSpokePage() {
                 <div className="p-5">
                   <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Critical Care Exposure</span>
                   <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                    [ Medical ICU / HDU — placeholder ]
+                    [ Medical ICU / HDU - placeholder ]
                   </p>
                 </div>
               </div>
@@ -595,7 +575,7 @@ export default function GeneralMedicineSpokePage() {
                 <div className="p-5">
                   <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Pathology &amp; Radiology Support</span>
                   <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                    [ Diagnostic support: 24x7 pathology and radiology — confirm/expand ]
+                    [ Diagnostic support: 24x7 pathology and radiology - confirm/expand ]
                   </p>
                 </div>
               </div>
@@ -612,7 +592,7 @@ export default function GeneralMedicineSpokePage() {
                     Skills / Simulation Facilities &amp; Seminar Room
                   </h3>
                   <p className="text-sm font-mono text-[#595959] bg-white p-3 rounded-lg border border-gray-200 mt-2">
-                    [ Skills / simulation facilities, seminar room — placeholder ]
+                    [ Skills / simulation facilities, seminar room - placeholder ]
                   </p>
                 </div>
               </div>
@@ -635,7 +615,7 @@ export default function GeneralMedicineSpokePage() {
         </section>
 
         {/* 7. Faculty Grid (§7 - Spec 5.6: HOD highlighted/first, then faculty) */}
-        {/* Render as a faculty grid with photographs. Data below carried over from current site — verify and add photos. */}
+        {/* Render as a faculty grid with photographs. Data below carried over from current site - verify and add photos. */}
         <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mb-12">
@@ -821,7 +801,7 @@ export default function GeneralMedicineSpokePage() {
                   {/* Descriptor Below Node */}
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 1 — Foundation:
+                      Year 1 - Foundation:
                     </strong>
                     core clinical postings, ward and ICU exposure, log-book initiation, research methodology and protocol development.
                   </div>
@@ -844,7 +824,7 @@ export default function GeneralMedicineSpokePage() {
                   {/* Descriptor Below Node */}
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 2 — Consolidation:
+                      Year 2 - Consolidation:
                     </strong>
                     sub-specialty rotations, increasing clinical responsibility, thesis data collection, NBEMS Formative Assessment Test (FAT).
                   </div>
@@ -867,7 +847,7 @@ export default function GeneralMedicineSpokePage() {
                   {/* Descriptor Below Node */}
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 3 — Mastery:
+                      Year 3 - Mastery:
                     </strong>
                     independent clinical management under supervision, thesis completion and submission, preparation for the DNB Final (Exit) Examination.
                   </div>
@@ -885,7 +865,7 @@ export default function GeneralMedicineSpokePage() {
                 Thesis &amp; Research
               </h2>
               <p className="text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
-                A thesis is mandatory for DNB General Medicine. Residents are supported end-to-end by the Medical Research Department and a faculty guide — from research methodology training and Ethics Committee approval to analysis, writing, timely submission to NBEMS, and publication of thesis-based work.
+                A thesis is mandatory for DNB General Medicine. Residents are supported end-to-end by the Medical Research Department and a faculty guide - from research methodology training and Ethics Committee approval to analysis, writing, timely submission to NBEMS, and publication of thesis-based work.
               </p>
             </div>
 
@@ -898,7 +878,7 @@ export default function GeneralMedicineSpokePage() {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-[#595959] font-mono bg-white p-4 rounded-xl border border-gray-200">
-                [ Add department-specific research highlights — recent resident publications/presentations — placeholders. ]
+                [ Add department-specific research highlights - recent resident publications/presentations - placeholders. ]
               </p>
             </div>
           </div>
@@ -920,10 +900,10 @@ export default function GeneralMedicineSpokePage() {
               <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">
-                    DNB Final (Exit) Examination pass rate — General Medicine:
+                    DNB Final (Exit) Examination pass rate - General Medicine:
                   </span>
                   <span className="text-xl font-bold font-mono text-[#595959] mt-3 block bg-[#EAF0F7]/40 py-2 px-3 rounded-lg border border-gray-200">
-                    [ % — placeholder ]
+                    [ % - placeholder ]
                   </span>
                 </div>
               </div>
@@ -961,7 +941,7 @@ export default function GeneralMedicineSpokePage() {
                   Alumni Highlights &amp; Placements
                 </strong>
                 <p className="font-mono text-xs sm:text-sm text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                  [ Notable placements, super-specialty fellowships, consultant &amp; faculty positions — placeholder ]
+                  [ Notable placements, super-specialty fellowships, consultant &amp; faculty positions - placeholder ]
                 </p>
               </div>
             </div>
@@ -1008,7 +988,7 @@ export default function GeneralMedicineSpokePage() {
                   </div>
                   <div className="pt-4 border-t border-gray-200">
                     <span className="font-serif font-bold text-sm text-[#1F3864] block">
-                      Faculty — [ name ]
+                      Faculty - [ name ]
                     </span>
                   </div>
                 </div>
@@ -1042,7 +1022,7 @@ export default function GeneralMedicineSpokePage() {
                   </div>
                   <div className="pt-4 border-t border-gray-200">
                     <span className="font-serif font-bold text-sm text-[#1F3864] block">
-                      Resident — [ name, batch ]
+                      Resident - [ name, batch ]
                     </span>
                   </div>
                 </div>
@@ -1055,7 +1035,7 @@ export default function GeneralMedicineSpokePage() {
         <section id="enquiry-form" className="py-16 sm:py-24 bg-[#1F3864] text-white relative overflow-hidden scroll-mt-20 border-y-4 border-[#C8862B]">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 pointer-events-none"></div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div>
               <div className="max-w-4xl mb-12">
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold !text-white tracking-tight mb-6 drop-shadow-sm">
@@ -1087,7 +1067,7 @@ export default function GeneralMedicineSpokePage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl">
                   <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
-                    Contact — Academic Cell / DNB Coordinator
+                    Contact - Academic Cell / DNB Coordinator
                   </h3>
                   <div className="space-y-5 text-sm">
                     <div className="flex items-start gap-3">

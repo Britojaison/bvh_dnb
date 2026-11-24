@@ -152,7 +152,7 @@ export default function RadioDiagnosisPage() {
   return (
     <div className="min-h-screen bg-white text-[#1C2D4A]">
       {/* SECTION 1: Department Banner */}
-      <section className="relative w-full py-20 sm:py-28 lg:py-32 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 text-white overflow-hidden">
+      <section className="relative w-full py-36 sm:py-48 lg:py-60 min-h-[580px] lg:min-h-[680px] flex items-center bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 text-white overflow-hidden">
         <div className="absolute inset-0 -z-10 mix-blend-multiply opacity-30">
           <Image
             src="/images/department-radiology.jpg"
@@ -163,7 +163,7 @@ export default function RadioDiagnosisPage() {
             sizes="100vw"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 mb-4 font-medium flex-wrap">
             <Link href="/" className="hover:text-white transition">Home</Link>
             <ChevronRight className="w-3.5 h-3.5" />
@@ -172,10 +172,6 @@ export default function RadioDiagnosisPage() {
             <span className="text-[#C8862B] font-semibold">Diploma in Radio Diagnosis (DRD)</span>
           </div>
 
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold tracking-wide uppercase text-blue-100 mb-6">
-            <Radio className="w-4 h-4 text-[#C8862B]" />
-            NBEMS Accredited Diploma Programme
-          </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
             Diploma in Radio Diagnosis (DRD)
@@ -185,21 +181,6 @@ export default function RadioDiagnosisPage() {
             Two-year, NBEMS-accredited diploma training in diagnostic and interventional radiology, with 24x7 imaging across modern modalities.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-2">
-            <a
-              href="#apply-enquire"
-              className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-[#C8862B] text-white font-semibold text-base shadow-lg hover:bg-[#b07424] transition duration-200"
-            >
-              Apply / Enquire
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </a>
-            <a
-              href="#programme-details"
-              className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-white/10 backdrop-blur-md border border-white/25 text-white font-semibold text-base hover:bg-white/20 transition duration-200"
-            >
-              Programme Details
-            </a>
-          </div>
         </div>
       </section>
 
@@ -261,7 +242,7 @@ export default function RadioDiagnosisPage() {
                   </tr>
                   <tr className="hover:bg-gray-50/70 transition bg-gray-50/30">
                     <td className="py-4 px-6 font-semibold text-[#1F3864]">Seats per session</td>
-                    <td className="py-4 px-6 text-[#1C2D4A]">[seats — placeholder]</td>
+                    <td className="py-4 px-6 text-[#1C2D4A]">[seats - placeholder]</td>
                   </tr>
                   <tr className="hover:bg-gray-50/70 transition">
                     <td className="py-4 px-6 font-semibold text-[#1F3864]">Entrance</td>
@@ -269,7 +250,7 @@ export default function RadioDiagnosisPage() {
                   </tr>
                   <tr className="hover:bg-gray-50/70 transition bg-gray-50/30">
                     <td className="py-4 px-6 font-semibold text-[#1F3864]">NBEMS accreditation status</td>
-                    <td className="py-4 px-6 text-[#1C2D4A]">[accredited since / validity — placeholder]</td>
+                    <td className="py-4 px-6 text-[#1C2D4A]">[accredited since / validity - placeholder]</td>
                   </tr>
                   <tr className="hover:bg-gray-50/70 transition">
                     <td className="py-4 px-6 font-semibold text-[#1F3864]">Commencement session</td>
@@ -347,7 +328,7 @@ export default function RadioDiagnosisPage() {
 
           <div className="mt-8 p-4 bg-gray-50 border border-dashed border-gray-300 rounded-lg text-xs sm:text-sm text-gray-600">
             <span className="font-semibold text-[#1F3864]">Numbers to confirm: </span>
-            [ Add metrics — scans reported per resident, IR procedures — placeholders. ]
+            [ Add metrics - scans reported per resident, IR procedures - placeholders. ]
           </div>
         </div>
       </section>
@@ -477,7 +458,7 @@ export default function RadioDiagnosisPage() {
 
           <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-lg text-xs sm:text-sm text-gray-600">
             <span className="font-semibold text-[#1F3864]">Department Infrastructure: </span>
-            [ PACS / reporting workstations, teaching archive — placeholders ]
+            [ PACS / reporting workstations, teaching archive - placeholders ]
           </div>
         </div>
       </section>
@@ -705,7 +686,7 @@ export default function RadioDiagnosisPage() {
               </p>
             </div>
             <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-lg text-xs sm:text-sm text-gray-600">
-              [ Confirm the exact research/thesis requirement for the Diploma from the current NBEMS Diploma bulletin, and add any department-specific research highlights — placeholders. ]
+              [ Confirm the exact research/thesis requirement for the Diploma from the current NBEMS Diploma bulletin, and add any department-specific research highlights - placeholders. ]
             </div>
           </div>
         </div>
@@ -727,10 +708,10 @@ export default function RadioDiagnosisPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
               <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-2">
-                Diploma Final (Exit) Examination pass rate — Radio Diagnosis
+                Diploma Final (Exit) Examination pass rate - Radio Diagnosis
               </div>
               <div className="text-3xl font-bold text-[#1F3864] mb-2">
-                [ % — placeholder ]
+                [ % - placeholder ]
               </div>
               <p className="text-xs text-gray-500">
                 NBEMS Diploma final examination success rate.
@@ -798,7 +779,7 @@ export default function RadioDiagnosisPage() {
               <div className="relative aspect-video bg-[#1F3864]/80 flex items-center justify-center text-white">
                 <Play className="w-12 h-12 text-[#C8862B] opacity-80" />
                 <span className="absolute bottom-3 left-4 text-xs bg-black/60 px-2 py-1 rounded text-white/90">
-                  Faculty Film — 10 July shoot
+                  Faculty Film - 10 July shoot
                 </span>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between">
@@ -806,7 +787,7 @@ export default function RadioDiagnosisPage() {
                   “ [ pull-quote ] ”
                 </blockquote>
                 <div>
-                  <h4 className="font-bold text-[#1F3864] text-base">Faculty — [ name ]</h4>
+                  <h4 className="font-bold text-[#1F3864] text-base">Faculty - [ name ]</h4>
                   <p className="text-xs text-gray-500">Department of Radiology, BVH</p>
                 </div>
               </div>
@@ -817,7 +798,7 @@ export default function RadioDiagnosisPage() {
               <div className="relative aspect-video bg-[#1F3864]/80 flex items-center justify-center text-white">
                 <Play className="w-12 h-12 text-[#C8862B] opacity-80" />
                 <span className="absolute bottom-3 left-4 text-xs bg-black/60 px-2 py-1 rounded text-white/90">
-                  Resident Film — 10 July shoot
+                  Resident Film - 10 July shoot
                 </span>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between">
@@ -825,7 +806,7 @@ export default function RadioDiagnosisPage() {
                   “ [ pull-quote ] ”
                 </blockquote>
                 <div>
-                  <h4 className="font-bold text-[#1F3864] text-base">Resident — [ name, batch ]</h4>
+                  <h4 className="font-bold text-[#1F3864] text-base">Resident - [ name, batch ]</h4>
                   <p className="text-xs text-gray-500">Diploma in Radio Diagnosis, BVH</p>
                 </div>
               </div>
@@ -887,7 +868,7 @@ export default function RadioDiagnosisPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-5 bg-white text-[#1C2D4A] rounded-xl p-6 sm:p-8 shadow-lg border border-[#D2DCE8]">
               <h3 className="text-xl font-bold text-[#1F3864] mb-4">
-                Contact — Academic Cell / DNB Coordinator
+                Contact - Academic Cell / DNB Coordinator
               </h3>
               <div className="space-y-4 text-sm">
                 <div>
@@ -919,7 +900,7 @@ export default function RadioDiagnosisPage() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
                 <p className="text-[11px] text-gray-500 text-center mt-2">
-                  [[ Use an &apos;Apply / Enquire&apos; academic CTA — not the clinical &apos;Book Appointment&apos; button. ]]
+                  [[ Use an &apos;Apply / Enquire&apos; academic CTA - not the clinical &apos;Book Appointment&apos; button. ]]
                 </p>
               </div>
             </div>

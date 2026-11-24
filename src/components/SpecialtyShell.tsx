@@ -20,7 +20,7 @@ export default function SpecialtyShell({ title, level, duration, shortTitle }: S
       </span>
       <h1 className="text-4xl font-bold text-[#1F3864] font-serif mb-4">{title}</h1>
       <p className="text-gray-600 mb-8">
-        Bhaktivedanta Hospital &amp; Research Institute — Specialty department page placeholder. Content will be populated from the specialty document.
+        Bhaktivedanta Hospital &amp; Research Institute - Specialty department page placeholder. Content will be populated from the specialty document.
       </p>
       <div className="flex gap-4">
         <button className="px-6 py-2.5 bg-[#C8862B] text-white font-medium rounded-lg shadow-sm hover:brightness-105 transition">

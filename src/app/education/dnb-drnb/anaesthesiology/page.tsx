@@ -113,7 +113,7 @@ export default function AnaesthesiologySpokePage() {
 
         {/* 1. Department Banner (§1) */}
         {/* Full-width banner: operation theatre photograph from the 10 July shoot. Overlay title and one-line below. */}
-        <section className="relative w-full text-white overflow-hidden py-20 sm:py-28 lg:py-32 border-b-4 border-[#C8862B]">
+        <section className="relative w-full text-white overflow-hidden py-36 sm:py-48 lg:py-60 min-h-[580px] lg:min-h-[680px] flex items-center border-b-4 border-[#C8862B]">
           <div className="absolute inset-0 z-0">
             <Image
               src={PLACEHOLDER_IMAGE}
@@ -127,12 +127,8 @@ export default function AnaesthesiologySpokePage() {
             <div className="absolute inset-0 bg-[#1F3864]/30 mix-blend-multiply"></div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D5E8F0] text-xs font-semibold mb-6 border border-white/20 backdrop-blur-sm">
-                <Activity className="w-3.5 h-3.5 text-[#C8862B]" />
-                NBEMS Accredited Broad Specialty
-              </span>
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl">
 
               {/* Page title */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-serif font-bold !text-white tracking-tight leading-[1.2] mb-6 drop-shadow-md">
@@ -140,25 +136,9 @@ export default function AnaesthesiologySpokePage() {
               </h1>
 
               {/* One-line positioning */}
-              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-3xl">
                 Three-year, NBEMS-accredited training across ten modern operation theatres and a wide range of surgical specialties.
               </p>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href="#enquiry-form"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-lg bg-[#C8862B] text-white font-semibold text-sm sm:text-base hover:brightness-110 shadow-lg hover:shadow-xl transition group"
-                >
-                  <span>Apply / Enquire</span>
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a
-                  href="#programme-details"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-black/40 hover:bg-black/60 text-slate-100 hover:text-white border border-white/30 backdrop-blur-sm text-sm font-semibold transition"
-                >
-                  <span>Programme Overview &darr;</span>
-                </a>
-              </div>
             </div>
           </div>
         </section>
@@ -244,7 +224,7 @@ export default function AnaesthesiologySpokePage() {
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Seats per session</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[seats — placeholder]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[seats - placeholder]</td>
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Entrance</td>
@@ -253,7 +233,7 @@ export default function AnaesthesiologySpokePage() {
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">NBEMS accreditation status</td>
                       <td className="py-3.5 px-6 text-[#1A1A1A]">
-                        <span className="font-mono text-[#595959]">[accredited since / validity — placeholder]</span>{" "}
+                        <span className="font-mono text-[#595959]">[accredited since / validity - placeholder]</span>{" "}
                         <span className="text-xs text-gray-600 block sm:inline sm:ml-2">
                           (recognised by NBEMS)
                         </span>
@@ -261,7 +241,7 @@ export default function AnaesthesiologySpokePage() {
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Commencement session</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[January / July — confirm]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[January / July - confirm]</td>
                     </tr>
                   </tbody>
                 </table>
@@ -284,7 +264,7 @@ export default function AnaesthesiologySpokePage() {
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Seats per session</span>
-                <span className="text-sm font-mono text-[#595959]">[seats — placeholder]</span>
+                <span className="text-sm font-mono text-[#595959]">[seats - placeholder]</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Entrance</span>
@@ -292,12 +272,12 @@ export default function AnaesthesiologySpokePage() {
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">NBEMS accreditation status</span>
-                <span className="text-sm text-gray-900 block font-mono text-[#595959]">[accredited since / validity — placeholder]</span>
+                <span className="text-sm text-gray-900 block font-mono text-[#595959]">[accredited since / validity - placeholder]</span>
                 <span className="text-xs text-gray-600 block mt-0.5">(recognised by NBEMS)</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Commencement session</span>
-                <span className="text-sm font-mono text-[#595959]">[January / July — confirm]</span>
+                <span className="text-sm font-mono text-[#595959]">[January / July - confirm]</span>
               </div>
             </div>
 
@@ -364,7 +344,7 @@ export default function AnaesthesiologySpokePage() {
                     Beyond the Operating Room
                   </h3>
                   <p className="text-sm leading-relaxed text-[#1A1A1A]">
-                    Exposure beyond the OT — endoscopy, interventional radiology and cath-lab suites, plus pre-operative assessment clinics.
+                    Exposure beyond the OT - endoscopy, interventional radiology and cath-lab suites, plus pre-operative assessment clinics.
                   </p>
                 </div>
               </div>
@@ -391,7 +371,7 @@ export default function AnaesthesiologySpokePage() {
                 <span>Numbers to confirm</span>
               </h3>
               <p className="text-xs sm:text-sm font-mono text-[#595959] bg-white p-3.5 rounded-lg border border-gray-200">
-                [ Add metrics — cases per resident, regional/USG-guided blocks — placeholders. ]
+                [ Add metrics - cases per resident, regional/USG-guided blocks - placeholders. ]
               </p>
             </div>
           </div>
@@ -546,7 +526,7 @@ export default function AnaesthesiologySpokePage() {
                   Post-Anaesthesia Care Unit &amp; Pre-Anaesthesia Clinic
                 </h3>
                 <p className="text-sm font-mono text-[#595959] bg-white p-3 rounded-lg border border-gray-200 mt-2">
-                  [ Post-anaesthesia care unit / pre-anaesthesia clinic details — placeholders ]
+                  [ Post-anaesthesia care unit / pre-anaesthesia clinic details - placeholders ]
                 </p>
               </div>
             </div>
@@ -733,7 +713,7 @@ export default function AnaesthesiologySpokePage() {
                   </div>
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 1 — Foundation:
+                      Year 1 - Foundation:
                     </strong>
                     supervised OT postings, airway and monitoring skills, log-book initiation, research methodology.
                   </div>
@@ -751,7 +731,7 @@ export default function AnaesthesiologySpokePage() {
                   </div>
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 2 — Consolidation:
+                      Year 2 - Consolidation:
                     </strong>
                     specialty-wise anaesthesia rotations, regional techniques, thesis data collection, NBEMS Formative Assessment Test (FAT).
                   </div>
@@ -769,7 +749,7 @@ export default function AnaesthesiologySpokePage() {
                   </div>
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 3 — Mastery:
+                      Year 3 - Mastery:
                     </strong>
                     independent peri-operative management under supervision, thesis completion, preparation for the DNB Final (Exit) Examination.
                   </div>
@@ -787,7 +767,7 @@ export default function AnaesthesiologySpokePage() {
                 Thesis &amp; Research
               </h2>
               <p className="text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
-                A thesis is a mandatory component of this programme. Residents are supported end-to-end by the Medical Research Department and a faculty guide — from research methodology training and Ethics Committee approval to analysis, writing, timely submission to NBEMS, and publication of thesis-based work.
+                A thesis is a mandatory component of this programme. Residents are supported end-to-end by the Medical Research Department and a faculty guide - from research methodology training and Ethics Committee approval to analysis, writing, timely submission to NBEMS, and publication of thesis-based work.
               </p>
             </div>
 
@@ -800,7 +780,7 @@ export default function AnaesthesiologySpokePage() {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-[#595959] font-mono bg-white p-4 rounded-xl border border-gray-200">
-                [ Add department-specific research highlights — recent resident publications/presentations — placeholders. ]
+                [ Add department-specific research highlights - recent resident publications/presentations - placeholders. ]
               </p>
             </div>
           </div>
@@ -822,10 +802,10 @@ export default function AnaesthesiologySpokePage() {
               <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">
-                    DNB Final (Exit) Examination pass rate — Anaesthesiology:
+                    DNB Final (Exit) Examination pass rate - Anaesthesiology:
                   </span>
                   <span className="text-xl font-bold font-mono text-[#595959] mt-3 block bg-[#EAF0F7]/40 py-2 px-3 rounded-lg border border-gray-200">
-                    [ % — placeholder ]
+                    [ % - placeholder ]
                   </span>
                 </div>
               </div>
@@ -863,7 +843,7 @@ export default function AnaesthesiologySpokePage() {
                   Alumni Highlights &amp; Placements
                 </strong>
                 <p className="font-mono text-xs sm:text-sm text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                  [ Notable placements, super-specialty fellowships, consultant &amp; faculty positions — placeholder ]
+                  [ Notable placements, super-specialty fellowships, consultant &amp; faculty positions - placeholder ]
                 </p>
               </div>
             </div>
@@ -910,7 +890,7 @@ export default function AnaesthesiologySpokePage() {
                   </div>
                   <div className="pt-4 border-t border-gray-200">
                     <span className="font-serif font-bold text-sm text-[#1F3864] block">
-                      Faculty — [ name ]
+                      Faculty - [ name ]
                     </span>
                   </div>
                 </div>
@@ -944,7 +924,7 @@ export default function AnaesthesiologySpokePage() {
                   </div>
                   <div className="pt-4 border-t border-gray-200">
                     <span className="font-serif font-bold text-sm text-[#1F3864] block">
-                      Resident — [ name, batch ]
+                      Resident - [ name, batch ]
                     </span>
                   </div>
                 </div>
@@ -957,7 +937,7 @@ export default function AnaesthesiologySpokePage() {
         <section id="enquiry-form" className="py-16 sm:py-24 bg-[#1F3864] text-white relative overflow-hidden scroll-mt-20 border-y-4 border-[#C8862B]">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 pointer-events-none"></div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div>
               <div className="max-w-4xl mb-12">
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold !text-white tracking-tight mb-6 drop-shadow-sm">
@@ -989,7 +969,7 @@ export default function AnaesthesiologySpokePage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl">
                   <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
-                    Contact — Academic Cell / DNB Coordinator
+                    Contact - Academic Cell / DNB Coordinator
                   </h3>
                   <div className="space-y-5 text-sm">
                     <div className="flex items-start gap-3">

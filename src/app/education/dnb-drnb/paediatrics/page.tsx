@@ -166,7 +166,7 @@ export default function PaediatricsSpokePage() {
 
         {/* 1. Department Banner (§1) */}
         {/* Full-width banner: NICU/PICU or paediatric ward photograph from the 10 July shoot. Overlay title and one-line below. */}
-        <section className="relative w-full text-white overflow-hidden py-20 sm:py-28 lg:py-32 border-b-4 border-[#C8862B]">
+        <section className="relative w-full text-white overflow-hidden py-36 sm:py-48 lg:py-60 min-h-[580px] lg:min-h-[680px] flex items-center border-b-4 border-[#C8862B]">
           <div className="absolute inset-0 z-0">
             <Image
               src={PLACEHOLDER_IMAGE}
@@ -180,12 +180,8 @@ export default function PaediatricsSpokePage() {
             <div className="absolute inset-0 bg-[#1F3864]/30 mix-blend-multiply"></div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D5E8F0] text-xs font-semibold mb-6 border border-white/20 backdrop-blur-sm">
-                <Baby className="w-3.5 h-3.5 text-[#C8862B]" />
-                NBEMS Accredited Broad Specialty
-              </span>
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl">
 
               {/* Page title */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-serif font-bold !text-white tracking-tight leading-[1.2] mb-6 drop-shadow-md">
@@ -193,25 +189,9 @@ export default function PaediatricsSpokePage() {
               </h1>
 
               {/* One-line positioning */}
-              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-3xl">
                 Three-year, NBEMS-accredited training in Paediatrics &amp; Neonatology at a leading North-Mumbai referral centre for sick newborns and children.
               </p>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href="#enquiry-form"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-lg bg-[#C8862B] text-white font-semibold text-sm sm:text-base hover:brightness-110 shadow-lg hover:shadow-xl transition group"
-                >
-                  <span>Apply / Enquire</span>
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a
-                  href="#programme-details"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-black/40 hover:bg-black/60 text-slate-100 hover:text-white border border-white/30 backdrop-blur-sm text-sm font-semibold transition"
-                >
-                  <span>Programme Overview &darr;</span>
-                </a>
-              </div>
             </div>
           </div>
         </section>
@@ -227,7 +207,7 @@ export default function PaediatricsSpokePage() {
 
                 <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
                   <p>
-                    The Department of Paediatrics at Bhaktivedanta Hospital &amp; Research Institute, established on 11 January 1998, has grown from 4 beds to 35 beds with the availability of all major paediatric sub-specialties — making it one of the leading centres for neonatal and child healthcare in North Mumbai.
+                    The Department of Paediatrics at Bhaktivedanta Hospital &amp; Research Institute, established on 11 January 1998, has grown from 4 beds to 35 beds with the availability of all major paediatric sub-specialties - making it one of the leading centres for neonatal and child healthcare in North Mumbai.
                   </p>
                   <p>
                     State-of-the-art NICU, PICU and ward facilities, backed by 24x7 radiology and pathology and emergency ambulance services, allow the department to manage any paediatric emergency. It serves as a tertiary-care referral centre for hospitals and nursing homes from Borivali to Dahanu for complex neonatal (NICU) and paediatric (PICU) cases.
@@ -308,7 +288,7 @@ export default function PaediatricsSpokePage() {
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Seats per session</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[seats — placeholder]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[seats - placeholder]</td>
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Entrance</td>
@@ -317,7 +297,7 @@ export default function PaediatricsSpokePage() {
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">NBEMS accreditation status</td>
                       <td className="py-3.5 px-6 text-[#1A1A1A]">
-                        <span className="font-mono text-[#595959]">[accredited since / validity — placeholder]</span>{" "}
+                        <span className="font-mono text-[#595959]">[accredited since / validity - placeholder]</span>{" "}
                         <span className="text-xs text-gray-600 block sm:inline sm:ml-2">
                           (DNB Paediatrics curriculum commenced June 2019)
                         </span>
@@ -325,7 +305,7 @@ export default function PaediatricsSpokePage() {
                     </tr>
                     <tr className="hover:bg-[#EAF0F7]/30 transition">
                       <td className="py-3.5 px-6 font-semibold text-[#1F3864] border-r border-gray-200">Commencement session</td>
-                      <td className="py-3.5 px-6 font-mono text-[#595959]">[January / July — confirm]</td>
+                      <td className="py-3.5 px-6 font-mono text-[#595959]">[January / July - confirm]</td>
                     </tr>
                   </tbody>
                 </table>
@@ -348,7 +328,7 @@ export default function PaediatricsSpokePage() {
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Seats per session</span>
-                <span className="text-sm font-mono text-[#595959]">[seats — placeholder]</span>
+                <span className="text-sm font-mono text-[#595959]">[seats - placeholder]</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Entrance</span>
@@ -356,12 +336,12 @@ export default function PaediatricsSpokePage() {
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">NBEMS accreditation status</span>
-                <span className="text-sm text-gray-900 block font-mono text-[#595959]">[accredited since / validity — placeholder]</span>
+                <span className="text-sm text-gray-900 block font-mono text-[#595959]">[accredited since / validity - placeholder]</span>
                 <span className="text-xs text-gray-600 block mt-0.5">(DNB Paediatrics curriculum commenced June 2019)</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm">
                 <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">Commencement session</span>
-                <span className="text-sm font-mono text-[#595959]">[January / July — confirm]</span>
+                <span className="text-sm font-mono text-[#595959]">[January / July - confirm]</span>
               </div>
             </div>
 
@@ -428,7 +408,7 @@ export default function PaediatricsSpokePage() {
                     Broad Sub-Specialty Exposure
                   </h3>
                   <p className="text-sm leading-relaxed text-[#1A1A1A]">
-                    Exposure across paediatric sub-specialties — neonatology, paediatric cardiology, neurology, surgery, nephrology, haematology-oncology, allergy and ENT.
+                    Exposure across paediatric sub-specialties - neonatology, paediatric cardiology, neurology, surgery, nephrology, haematology-oncology, allergy and ENT.
                   </p>
                 </div>
               </div>
@@ -455,7 +435,7 @@ export default function PaediatricsSpokePage() {
                 <span>Numbers to confirm</span>
               </h3>
               <p className="text-xs sm:text-sm font-mono text-[#595959] bg-white p-3.5 rounded-lg border border-gray-200">
-                [ Add metrics — annual NICU/PICU admissions, deliveries covered — placeholders. ]
+                [ Add metrics - annual NICU/PICU admissions, deliveries covered - placeholders. ]
               </p>
             </div>
           </div>
@@ -564,7 +544,7 @@ export default function PaediatricsSpokePage() {
                 <div className="p-5">
                   <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Bed Strength</span>
                   <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                    [ Paediatric ward bed strength — placeholder; site narrative notes 35 beds — verify ]
+                    [ Paediatric ward bed strength - placeholder; site narrative notes 35 beds - verify ]
                   </p>
                 </div>
               </div>
@@ -587,7 +567,7 @@ export default function PaediatricsSpokePage() {
                 <div className="p-5">
                   <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Critical Care Setup</span>
                   <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                    State-of-the-art NICU and PICU. [ bed counts — placeholder ]
+                    State-of-the-art NICU and PICU. [ bed counts - placeholder ]
                   </p>
                 </div>
               </div>
@@ -626,7 +606,7 @@ export default function PaediatricsSpokePage() {
                   Skills / Simulation Facilities &amp; Seminar Room
                 </h3>
                 <p className="text-sm font-mono text-[#595959] bg-white p-3 rounded-lg border border-gray-200 mt-2">
-                  [ Skills/simulation, seminar facilities — placeholder ]
+                  [ Skills/simulation, seminar facilities - placeholder ]
                 </p>
               </div>
             </div>
@@ -763,9 +743,8 @@ export default function PaediatricsSpokePage() {
                     >
                       <span>{s.day}</span>
                       <ChevronDown
-                        className={`w-4 h-4 text-[#2E75B6] transition-transform duration-200 ${
-                          isOpen ? "rotate-180" : ""
-                        }`}
+                        className={`w-4 h-4 text-[#2E75B6] transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
                     {isOpen && (
@@ -813,7 +792,7 @@ export default function PaediatricsSpokePage() {
                   </div>
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 1 — Foundation:
+                      Year 1 - Foundation:
                     </strong>
                     NICU/PICU and ward postings, log-book initiation, research methodology and protocol development.
                   </div>
@@ -831,7 +810,7 @@ export default function PaediatricsSpokePage() {
                   </div>
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 2 — Consolidation:
+                      Year 2 - Consolidation:
                     </strong>
                     sub-specialty exposure, growing clinical responsibility, thesis data collection, NBEMS Formative Assessment Test (FAT).
                   </div>
@@ -849,7 +828,7 @@ export default function PaediatricsSpokePage() {
                   </div>
                   <div className="mt-6 max-w-xs text-sm text-[#1A1A1A] leading-relaxed">
                     <strong className="block text-[#1F3864] font-semibold mb-1">
-                      Year 3 — Mastery:
+                      Year 3 - Mastery:
                     </strong>
                     supervised independent management, thesis completion and submission, preparation for the DNB Final (Exit) Examination.
                   </div>
@@ -867,7 +846,7 @@ export default function PaediatricsSpokePage() {
                 Thesis &amp; Research
               </h2>
               <p className="text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
-                A thesis is a mandatory component of this programme. Residents are supported end-to-end by the Medical Research Department and a faculty guide — from research methodology training and Ethics Committee approval to analysis, writing, timely submission to NBEMS, and publication of thesis-based work.
+                A thesis is a mandatory component of this programme. Residents are supported end-to-end by the Medical Research Department and a faculty guide - from research methodology training and Ethics Committee approval to analysis, writing, timely submission to NBEMS, and publication of thesis-based work.
               </p>
             </div>
 
@@ -880,7 +859,7 @@ export default function PaediatricsSpokePage() {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-[#595959] font-mono bg-white p-4 rounded-xl border border-gray-200">
-                [ Add department-specific research highlights — recent resident publications/presentations — placeholders. ]
+                [ Add department-specific research highlights - recent resident publications/presentations - placeholders. ]
               </p>
             </div>
           </div>
@@ -902,10 +881,10 @@ export default function PaediatricsSpokePage() {
               <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="text-xs uppercase tracking-wider font-semibold text-[#595959] block">
-                    DNB Final (Exit) Examination pass rate — Paediatrics:
+                    DNB Final (Exit) Examination pass rate - Paediatrics:
                   </span>
                   <span className="text-xl font-bold font-mono text-[#595959] mt-3 block bg-[#EAF0F7]/40 py-2 px-3 rounded-lg border border-gray-200">
-                    [ % — placeholder ]
+                    [ % - placeholder ]
                   </span>
                 </div>
               </div>
@@ -943,7 +922,7 @@ export default function PaediatricsSpokePage() {
                   Alumni Highlights &amp; Placements
                 </strong>
                 <p className="font-mono text-xs sm:text-sm text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
-                  [ Notable placements, super-specialty fellowships, consultant &amp; faculty positions — placeholder ]
+                  [ Notable placements, super-specialty fellowships, consultant &amp; faculty positions - placeholder ]
                 </p>
               </div>
             </div>
@@ -990,7 +969,7 @@ export default function PaediatricsSpokePage() {
                   </div>
                   <div className="pt-4 border-t border-gray-200">
                     <span className="font-serif font-bold text-sm text-[#1F3864] block">
-                      Faculty — [ name ]
+                      Faculty - [ name ]
                     </span>
                   </div>
                 </div>
@@ -1024,7 +1003,7 @@ export default function PaediatricsSpokePage() {
                   </div>
                   <div className="pt-4 border-t border-gray-200">
                     <span className="font-serif font-bold text-sm text-[#1F3864] block">
-                      Resident — [ name, batch ]
+                      Resident - [ name, batch ]
                     </span>
                   </div>
                 </div>
@@ -1037,7 +1016,7 @@ export default function PaediatricsSpokePage() {
         <section id="enquiry-form" className="py-16 sm:py-24 bg-[#1F3864] text-white relative overflow-hidden scroll-mt-20 border-y-4 border-[#C8862B]">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 pointer-events-none"></div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div>
               <div className="max-w-4xl mb-12">
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold !text-white tracking-tight mb-6 drop-shadow-sm">
@@ -1069,7 +1048,7 @@ export default function PaediatricsSpokePage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl">
                   <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
-                    Contact — Academic Cell / DNB Coordinator
+                    Contact - Academic Cell / DNB Coordinator
                   </h3>
                   <div className="space-y-5 text-sm">
                     <div className="flex items-start gap-3">
