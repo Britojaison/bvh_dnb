@@ -11,16 +11,16 @@ export default function FeesSection() {
 
             <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] font-normal leading-relaxed">
               <p>
-                Course fees for NBEMS programmes are standardised nationally, fixed and collected by NBEMS — they are uniform across accredited institutions for a given session.
+                Course fees for NBEMS programmes are standardised nationally, fixed and collected by NBEMS - they are uniform across accredited institutions for a given session.
               </p>
               <p>
                 Fee heads comprise tuition, library and annual appraisal charges, plus accommodation charges (only where accommodation is provided) and GST at the prevailing rate.
               </p>
               <p>
-                Indicative amounts: [ insert current figures as per the latest NBEMS bulletin — verify. The NBEMS manuals in our project quote differing tuition figures, so the published number must be confirmed before going live. ]
+                Indicative amounts: [ insert current figures as per the latest NBEMS bulletin - verify. The NBEMS manuals in our project quote differing tuition figures, so the published number must be confirmed before going live. ]
               </p>
               <p>
-                Accredited hospitals cannot charge any capitation fee, security deposit, security bond or caution deposit in any form — an important assurance of fair, transparent admission.
+                Accredited hospitals cannot charge any capitation fee, security deposit, security bond or caution deposit in any form - an important assurance of fair, transparent admission.
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function FeesSection() {
                 <tbody className="divide-y divide-gray-200 text-gray-800">
                   <tr className="hover:bg-[#EAF0F7]/30 transition">
                     <td className="py-3.5 px-6 font-medium border-r border-gray-200 text-[#1F3864]">Tuition Fees</td>
-                    <td className="py-3.5 px-6 text-right font-mono text-[#595959]">[ To be confirmed — as fixed by NBEMS ]</td>
+                    <td className="py-3.5 px-6 text-right font-mono text-[#595959]">[ To be confirmed - as fixed by NBEMS ]</td>
                   </tr>
                   <tr className="hover:bg-[#EAF0F7]/30 transition">
                     <td className="py-3.5 px-6 font-medium border-r border-gray-200 text-[#1F3864]">Library &amp; Learning Resources</td>

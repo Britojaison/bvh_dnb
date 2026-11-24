@@ -30,7 +30,7 @@ export default function HowToApplySection() {
                   1
                 </span>
                 <p>
-                  Qualify the relevant national entrance examination — NEET-PG (broad-specialty &amp; diploma) or NEET-SS (super-specialty).
+                  Qualify the relevant national entrance examination - NEET-PG (broad-specialty &amp; diploma) or NEET-SS (super-specialty).
                 </p>
               </div>
 
@@ -65,10 +65,10 @@ export default function HowToApplySection() {
 
           {/* Contact Box + Interactive Academic Enquiry Form Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            {/* Left 5 Cols: Contact — Academic Cell / DNB Coordinator */}
+            {/* Left 5 Cols: Contact - Academic Cell / DNB Coordinator */}
             <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl">
               <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
-                Contact — Academic Cell / DNB Coordinator
+                Contact - Academic Cell / DNB Coordinator
               </h3>
 
               <div className="space-y-5 text-sm">

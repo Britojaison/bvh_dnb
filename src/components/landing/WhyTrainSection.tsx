@@ -21,7 +21,7 @@ const WHY_POINTS: WhyItem[] = [
   {
     icon: Award,
     heading: "Comprehensive NBEMS Breadth",
-    line: "NBEMS-accredited programmes across broad specialties, super-specialties and a diploma — a wide academic spread in one institution.",
+    line: "NBEMS-accredited programmes across broad specialties, super-specialties and a diploma - a wide academic spread in one institution.",
   },
   {
     icon: Activity,
@@ -43,7 +43,7 @@ const WHY_POINTS: WhyItem[] = [
   {
     icon: Microscope,
     heading: "Active Research Ecosystem",
-    line: "A strong, well-resourced research ecosystem — dedicated Medical Research Department, dual registered Ethics Committees, and extensive clinical-trial experience — giving residents real research training as per NBEMS requirements.",
+    line: "A strong, well-resourced research ecosystem - dedicated Medical Research Department, dual registered Ethics Committees, and extensive clinical-trial experience - giving residents real research training as per NBEMS requirements.",
   },
   {
     icon: CalendarCheck,
@@ -106,7 +106,7 @@ export default function WhyTrainSection() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 border-t border-gray-100 text-xs text-[#595959]">
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
                 <Bed className="w-4 h-4 text-[#1F3864] flex-shrink-0" />
-                <span><strong className="text-[#1F3864]">Hospital Beds:</strong> [ Total beds — to be confirmed by BVH ]</span>
+                <span><strong className="text-[#1F3864]">Hospital Beds:</strong> [ Total beds - to be confirmed by BVH ]</span>
               </div>
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
                 <Award className="w-4 h-4 text-[#1F3864] flex-shrink-0" />
@@ -114,7 +114,7 @@ export default function WhyTrainSection() {
               </div>
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-[#EAF0F7]/40 border border-[#D2DCE8]/60">
                 <GraduationCap className="w-4 h-4 text-[#1F3864] flex-shrink-0" />
-                <span><strong className="text-[#1F3864]">Teaching Experience:</strong> [ Years of PG Teaching — to be supplied ]</span>
+                <span><strong className="text-[#1F3864]">Teaching Experience:</strong> [ Years of PG Teaching - to be supplied ]</span>
               </div>
             </div>
           </div>

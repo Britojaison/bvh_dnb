@@ -13,14 +13,14 @@ export default function LifeAtBvhSection() {
               Life at BVH
             </h2>
             <p className="text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
-              Beyond clinical training, BVH offers a supportive, values-driven community. Alongside modern, evidence-based medicine, the institute is known for its compassionate, patient-centred ethos and an integrative approach to care — an environment many residents find uniquely grounding.
+              Beyond clinical training, BVH offers a supportive, values-driven community. Alongside modern, evidence-based medicine, the institute is known for its compassionate, patient-centred ethos and an integrative approach to care - an environment many residents find uniquely grounding.
             </p>
           </div>
 
-          {/* Compact Photo & Culture Highlights (Spec: light and warm) */}
+          {/* Compact Photo & Culture Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Photo Card 1: Campus Life */}
-            <div className="bg-white rounded-2xl overflow-hidden border border-amber-200/60 shadow-sm flex flex-col justify-between group">
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#D2DCE8] shadow-sm flex flex-col justify-between group">
               <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden">
                 <Image
                   src={PLACEHOLDER_IMAGE}
@@ -30,18 +30,17 @@ export default function LifeAtBvhSection() {
                 />
               </div>
               <div className="p-5">
-                <div className="flex items-center gap-2 text-[#C8862B] mb-1.5">
-                  <Coffee className="w-4 h-4" />
-                  <span className="font-serif font-bold text-sm text-[#1F3864]">Campus Living &amp; Camaraderie</span>
-                </div>
+                <h3 className="font-serif font-bold text-base text-[#1F3864] mb-1.5">
+                  Campus Living &amp; Camaraderie
+                </h3>
                 <p className="text-xs text-[#595959] leading-relaxed">
-                  [ <em>Add 1 line on hostel life, shared resident spaces, and campus community — placeholder.</em> ]
+                  [ <em>Add 1 line on hostel life, shared resident spaces, and campus community - placeholder.</em> ]
                 </p>
               </div>
             </div>
 
             {/* Photo Card 2: Community Outreach */}
-            <div className="bg-white rounded-2xl overflow-hidden border border-amber-200/60 shadow-sm flex flex-col justify-between group">
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#D2DCE8] shadow-sm flex flex-col justify-between group">
               <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden">
                 <Image
                   src={PLACEHOLDER_IMAGE}
@@ -51,18 +50,17 @@ export default function LifeAtBvhSection() {
                 />
               </div>
               <div className="p-5">
-                <div className="flex items-center gap-2 text-[#C8862B] mb-1.5">
-                  <Users className="w-4 h-4" />
-                  <span className="font-serif font-bold text-sm text-[#1F3864]">Community &amp; Outreach Camps</span>
-                </div>
+                <h3 className="font-serif font-bold text-base text-[#1F3864] mb-1.5">
+                  Community &amp; Outreach Camps
+                </h3>
                 <p className="text-xs text-[#595959] leading-relaxed">
-                  [ <em>Add 1 line on community health camps, rural outreach, and service initiatives — placeholder.</em> ]
+                  [ <em>Add 1 line on community health camps, rural outreach, and service initiatives - placeholder.</em> ]
                 </p>
               </div>
             </div>
 
             {/* Photo Card 3: Values & Culture */}
-            <div className="bg-white rounded-2xl overflow-hidden border border-amber-200/60 shadow-sm flex flex-col justify-between group">
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#D2DCE8] shadow-sm flex flex-col justify-between group">
               <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden">
                 <Image
                   src={PLACEHOLDER_IMAGE}
@@ -72,12 +70,11 @@ export default function LifeAtBvhSection() {
                 />
               </div>
               <div className="p-5">
-                <div className="flex items-center gap-2 text-[#C8862B] mb-1.5">
-                  <Heart className="w-4 h-4" />
-                  <span className="font-serif font-bold text-sm text-[#1F3864]">Values &amp; Holistic Culture</span>
-                </div>
+                <h3 className="font-serif font-bold text-base text-[#1F3864] mb-1.5">
+                  Values &amp; Holistic Culture
+                </h3>
                 <p className="text-xs text-[#595959] leading-relaxed">
-                  [ <em>Add 1 line on spiritual grounding, mindfulness, and the institute&apos;s compassionate culture — placeholder.</em> ]
+                  [ <em>Add 1 line on spiritual grounding, mindfulness, and the institute&apos;s compassionate culture - placeholder.</em> ]
                 </p>
               </div>
             </div>

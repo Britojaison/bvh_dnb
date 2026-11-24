@@ -10,13 +10,13 @@ export default function DownloadsSection() {
     },
     {
       title: "Accreditation Certificates",
-      desc: "[ NBEMS, NABH & NABL institutional certificates — placeholder ].",
+      desc: "[ NBEMS, NABH & NABL institutional certificates - placeholder ].",
       badge: "Certificates",
       icon: Shield,
     },
     {
       title: "Academic Brochure & Department Guides",
-      desc: "[ Specialty wise resident guides & rotation brochures — placeholder ].",
+      desc: "[ Specialty wise resident guides & rotation brochures - placeholder ].",
       badge: "Brochures",
       icon: FileText,
     },
@@ -82,7 +82,7 @@ export default function DownloadsSection() {
           </div>
 
           <p className="text-xs text-[#595959] italic text-right">
-            [ Any other downloadables — accreditation certificates, brochure — placeholders. ]
+            [ Any other downloadables - accreditation certificates, brochure - placeholders. ]
           </p>
         </div>
       </div>

@@ -81,7 +81,7 @@ export default function ProgrammeDurationSection() {
                 <div className="flex items-start gap-3 p-3.5 bg-[#EAF0F7]/40 rounded-xl border border-gray-100">
                   <Calendar className="w-4 h-4 text-[#2E75B6] flex-shrink-0 mt-0.5" />
                   <span>
-                    A fixed weekly academic calendar in every department — bedside clinics, basic and grand rounds, case presentations, seminars and symposia, journal clubs, faculty teaching, central sessions, guest lectures, clinical audit, mortality meets and interdepartmental meetings.
+                    A fixed weekly academic calendar in every department - bedside clinics, basic and grand rounds, case presentations, seminars and symposia, journal clubs, faculty teaching, central sessions, guest lectures, clinical audit, mortality meets and interdepartmental meetings.
                   </span>
                 </div>
 

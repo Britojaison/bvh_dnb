@@ -118,11 +118,11 @@ export default function AcademicsAndStipend() {
                   </td>
                   <td className="py-3.5 px-4 font-mono font-bold text-gray-800">₹ 37,000 / mo</td>
                   <td className="py-3.5 px-4 font-mono font-bold text-gray-800">₹ 39,000 / mo</td>
-                  <td className="py-3.5 px-4 text-[#595959]">— (2-year course)</td>
+                  <td className="py-3.5 px-4 text-[#595959]">- (2-year course)</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="py-3.5 px-4 font-semibold text-purple-900">
-                    DrNB (Super Specialties — Urology, Cardiology)
+                    DrNB (Super Specialties - Urology, Cardiology)
                   </td>
                   <td className="py-3.5 px-4 font-mono font-bold text-purple-900">₹ 41,000 / mo</td>
                   <td className="py-3.5 px-4 font-mono font-bold text-purple-900">₹ 43,000 / mo</td>

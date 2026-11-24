@@ -16,24 +16,24 @@ interface TestimonialCard {
 const TESTIMONIALS: TestimonialCard[] = [
   {
     role: "Faculty",
-    speaker: "Faculty testimonial — [ name, designation ]",
+    speaker: "Faculty testimonial - [ name, designation ]",
     designation: "[ Department HOD / PG Teacher ]",
     quote: "“[ short pull-quote ]”",
-    videoTitle: "Faculty Perspective — Postgraduate Clinical Training at BVH",
+    videoTitle: "Faculty Perspective - Postgraduate Clinical Training at BVH",
   },
   {
     role: "Resident",
-    speaker: "Resident testimonial — [ name, specialty, batch ]",
+    speaker: "Resident testimonial - [ name, specialty, batch ]",
     designation: "[ DNB / DrNB Resident Doctor ]",
     quote: "“[ short pull-quote ]”",
-    videoTitle: "Resident Journey — Daily Academics & Hands-on Exposure",
+    videoTitle: "Resident Journey - Daily Academics & Hands-on Exposure",
   },
   {
     role: "Alumnus",
-    speaker: "Alumnus testimonial — [ name, current position ]",
+    speaker: "Alumnus testimonial - [ name, current position ]",
     designation: "[ Consultant / Super-Specialist Fellow ]",
     quote: "“[ short pull-quote ]”",
-    videoTitle: "Alumni Reflection — Foundation for a Super-Specialty Career",
+    videoTitle: "Alumni Reflection - Foundation for a Super-Specialty Career",
   },
 ];
 
@@ -106,10 +106,6 @@ export default function VoicesSection() {
               </div>
             ))}
           </div>
-
-          <p className="text-xs text-[#2E75B6] italic text-center">
-            <em>[[ Note: Testimonial films will be embedded with transcripts upon final release. Click any card to preview lightbox. ]]</em>
-          </p>
         </div>
       </div>
 

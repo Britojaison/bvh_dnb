@@ -27,12 +27,12 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           {/* Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-serif font-bold !text-white tracking-tight leading-[1.2] mb-6 drop-shadow-md">
-            Train Where Medicine Meets Compassion — NBEMS-Accredited DNB &amp; DrNB Programmes at Bhaktivedanta Hospital &amp; Research Institute, Mumbai.
+            Train Where Medicine Meets Compassion - NBEMS-Accredited DNB &amp; DrNB Programmes at Bhaktivedanta Hospital &amp; Research Institute, Mumbai.
           </h1>
 
           {/* Sub-headline */}
           <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-2xl">
-            A NABH-accredited tertiary-care teaching institute offering structured, competency-based postgraduate training across broad specialties, super-specialties and diploma programmes — with high clinical volumes, an active research ecosystem, and dedicated resident support.
+            A NABH-accredited tertiary-care teaching institute offering structured, competency-based postgraduate training across broad specialties, super-specialties and diploma programmes - with high clinical volumes, an active research ecosystem, and dedicated resident support.
           </p>
 
           {/* Primary and Secondary Action Buttons */}

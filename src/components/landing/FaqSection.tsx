@@ -11,7 +11,7 @@ interface FaqItem {
 const FAQS: FaqItem[] = [
   {
     q: "Is the DNB/DrNB equivalent to MD/MS or DM/MCh?",
-    a: "Yes — NBEMS qualifications are recognised nationally and treated as equivalent to the corresponding MD/MS or DM/MCh for the purposes prescribed by the Government of India, including specialist and teaching posts.",
+    a: "Yes - NBEMS qualifications are recognised nationally and treated as equivalent to the corresponding MD/MS or DM/MCh for the purposes prescribed by the Government of India, including specialist and teaching posts.",
   },
   {
     q: "How are admissions decided?",
@@ -19,7 +19,7 @@ const FAQS: FaqItem[] = [
   },
   {
     q: "Is a stipend paid?",
-    a: "Yes — a stipend is compulsory and paid for the full duration of training. [ State BVH's stipend figures once confirmed. ]",
+    a: "Yes - a stipend is compulsory and paid for the full duration of training. [ State BVH's stipend figures once confirmed. ]",
   },
   {
     q: "Can the hospital charge a bond or capitation fee?",

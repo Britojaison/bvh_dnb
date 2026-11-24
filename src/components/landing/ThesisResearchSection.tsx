@@ -25,7 +25,7 @@ export default function ThesisResearchSection() {
     {
       num: "5",
       title: "Indexed Journal Publication",
-      desc: "Support for publishing thesis-based work in indexed journals — building each resident's academic profile.",
+      desc: "Support for publishing thesis-based work in indexed journals - building each resident's academic profile.",
     },
   ];
 
@@ -100,7 +100,7 @@ export default function ThesisResearchSection() {
               BVH Institutional Research Scale:
             </h4>
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-              [ <em>Add a one-line statement of BVH&apos;s research scale once confirmed — e.g. number of publications, ongoing trials, research staff — placeholders.</em> ]
+              [ <em>Add a one-line statement of BVH&apos;s research scale once confirmed - e.g. number of publications, ongoing trials, research staff - placeholders.</em> ]
             </p>
           </div>
         </div>

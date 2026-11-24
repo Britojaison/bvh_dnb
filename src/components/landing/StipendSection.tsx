@@ -11,7 +11,7 @@ const STIPEND_ROWS = [
     programme: "Post-diploma DNB (Broad)",
     year1: "Rs 37,000",
     year2: "Rs 39,000",
-    year3: "—",
+    year3: "-",
   },
   {
     programme: "DrNB (Super-specialty)",
@@ -82,7 +82,7 @@ export default function StipendSection() {
               BVH stipend policy:
             </h4>
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-normal">
-              [ <em>State whether BVH pays the NBEMS minimum, the Maharashtra State rate, or above — and any additional allowances. If BVH pays above the minimum, this should be highlighted prominently as a key advantage.</em> ]
+              [ <em>State whether BVH pays the NBEMS minimum, the Maharashtra State rate, or above - and any additional allowances. If BVH pays above the minimum, this should be highlighted prominently as a key advantage.</em> ]
             </p>
           </div>
         </div>

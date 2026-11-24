@@ -71,7 +71,7 @@ export default function ProgrammeOutcomesSection() {
                   Resident research output
                 </span>
                 <span className="text-[11px] text-[#D5E8F0]/70 font-mono mt-1 block">
-                  [ thesis publications / presentations — placeholder ]
+                  [ thesis publications / presentations - placeholder ]
                 </span>
               </div>
 
@@ -87,26 +87,23 @@ export default function ProgrammeOutcomesSection() {
                   Where our alumni are now
                 </span>
                 <span className="text-[11px] text-[#D5E8F0]/70 font-mono mt-1 block">
-                  [ notable placements, fellowships, faculty/consultant positions — placeholders ]
+                  [ notable placements, fellowships, faculty/consultant positions - placeholders ]
                 </span>
               </div>
             </div>
           </div>
 
           {/* Resident Achievements Card (Seed Examples to be Expanded) */}
-          <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-100">
-              <Trophy className="w-5 h-5 text-[#C8862B]" />
-              <h3 className="font-serif font-bold text-base text-[#1F3864]">
-                Resident achievements (seed examples to be expanded)
-              </h3>
-            </div>
+          <div className="p-6 sm:p-7 bg-white rounded-2xl border border-[#D2DCE8] shadow-sm">
+            <h3 className="font-serif font-bold text-base sm:text-lg text-[#1F3864] mb-4 pb-3 border-b border-gray-100">
+              Resident achievements (seed examples to be expanded)
+            </h3>
 
-            <div className="p-4 bg-[#FFFBF3] border-l-4 border-[#C8862B] rounded-r-lg space-y-2 text-xs sm:text-sm text-gray-800">
-              <p>
-                <strong>Dr. [name]</strong> — <span>[award/recognition], [conference/year].</span> <span className="text-[#595959] italic">[ Replace and expand with the current, complete list. ]</span>
+            <div className="p-4 rounded-xl bg-[#EAF0F7]/40 border border-[#D2DCE8]/60 space-y-2 text-xs sm:text-sm text-[#1C2D4A]">
+              <p className="leading-relaxed">
+                <strong className="text-[#1F3864]">Dr. [name]</strong> - <span>[award/recognition], [conference/year].</span> <span className="text-[#595959] italic">[ Replace and expand with the current, complete list. ]</span>
               </p>
-              <p className="text-xs text-[#2E75B6] italic pt-1">
+              <p className="text-xs text-[#2E75B6] italic pt-1 border-t border-[#D2DCE8]/40">
                 <em>[[ Pull forward the strongest, most recent achievements; refresh annually. ]]</em>
               </p>
             </div>

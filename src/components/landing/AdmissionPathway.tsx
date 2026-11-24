@@ -67,7 +67,7 @@ export default function AdmissionPathway() {
               Admission &amp; Counselling
             </h2>
             <p className="text-base sm:text-lg text-[#1A1A1A] mt-3 leading-relaxed">
-              Admissions are entirely merit-based, through national entrance examinations and centralised counselling — there is no separate institutional entrance test and no management quota.
+              Admissions are entirely merit-based, through national entrance examinations and centralised counselling - there is no separate institutional entrance test and no management quota.
             </p>
           </div>
 
@@ -209,7 +209,7 @@ export default function AdmissionPathway() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#2E75B6] font-bold mt-1">&bull;</span>
-                  <span>Participate in the centralised counselling conducted by the Medical Counselling Committee (MCC) of the DGHS, Ministry of Health &amp; Family Welfare — All-India Open NBEMS seats are allotted alongside the 50% All-India-Quota MD/MS/Diploma seats.</span>
+                  <span>Participate in the centralised counselling conducted by the Medical Counselling Committee (MCC) of the DGHS, Ministry of Health &amp; Family Welfare - All-India Open NBEMS seats are allotted alongside the 50% All-India-Quota MD/MS/Diploma seats.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#2E75B6] font-bold mt-1">&bull;</span>

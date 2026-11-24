@@ -41,10 +41,10 @@ export default function ComplianceAccordion() {
             Clear escalation: department/mentor level &rarr; Academic Cell / DNB Coordinator &rarr; Grievance Redressal Committee &rarr; institutional leadership, with recourse to NBEMS where applicable.
           </div>
           <p className="text-[#595959]">
-            Committee composition and contact: <span className="italic font-mono text-xs">[ names, designations, email, phone — placeholders ].</span>
+            Committee composition and contact: <span className="italic font-mono text-xs">[ names, designations, email, phone - placeholders ].</span>
           </p>
           <p className="text-[#595959]">
-            How to raise a grievance: <span className="italic font-mono text-xs">[ describe the submission channel — email / form / register — placeholder ].</span>
+            How to raise a grievance: <span className="italic font-mono text-xs">[ describe the submission channel - email / form / register - placeholder ].</span>
           </p>
         </div>
       ),
@@ -70,7 +70,7 @@ export default function ComplianceAccordion() {
             </div>
           </div>
           <p className="text-[#595959]">
-            Institutional anti-ragging contact: <span className="italic font-mono text-xs">[ name, designation, phone, email — placeholder ].</span>
+            Institutional anti-ragging contact: <span className="italic font-mono text-xs">[ name, designation, phone, email - placeholder ].</span>
           </p>
         </div>
       ),
@@ -106,7 +106,7 @@ export default function ComplianceAccordion() {
             Orientation on medical ethics, patient rights, confidentiality and documentation forms part of the academic programme.
           </p>
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ Link to / summarise BVH's resident code of conduct — placeholder. ]</span>
+            <span className="italic font-mono text-xs">[ Link to / summarise BVH's resident code of conduct - placeholder. ]</span>
           </p>
         </div>
       ),
@@ -124,7 +124,7 @@ export default function ComplianceAccordion() {
             Leave availed in excess of the prescribed limit extends the training period correspondingly and may affect eligibility for the Final Examination.
           </p>
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ Add BVH-specific leave details — casual/academic/maternity leave, application process — placeholders. ]</span>
+            <span className="italic font-mono text-xs">[ Add BVH-specific leave details - casual/academic/maternity leave, application process - placeholders. ]</span>
           </p>
         </div>
       ),
@@ -139,7 +139,7 @@ export default function ComplianceAccordion() {
             Duty rosters are structured to balance rigorous clinical exposure with resident well-being and safe patient care.
           </p>
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ State BVH's duty-hour framework, on-call and rest provisions — placeholders. ]</span>
+            <span className="italic font-mono text-xs">[ State BVH's duty-hour framework, on-call and rest provisions - placeholders. ]</span>
           </p>
         </div>
       ),
@@ -151,7 +151,7 @@ export default function ComplianceAccordion() {
       content: (
         <div className="space-y-3 text-xs sm:text-sm text-gray-800 leading-relaxed">
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ Hostel availability, single/shared rooms, capacity, on-/off-campus, duty rooms, mess/canteen, and whether accommodation is free or charged (charges, if any, are capped per NBEMS) — placeholders. ]</span>
+            <span className="italic font-mono text-xs">[ Hostel availability, single/shared rooms, capacity, on-/off-campus, duty rooms, mess/canteen, and whether accommodation is free or charged (charges, if any, are capped per NBEMS) - placeholders. ]</span>
           </p>
           <p className="text-xs text-[#2E75B6]">
             <em>[[ Note: Real hostel, duty-room, mess and campus photographs will be updated from the scheduled shoot. ]]</em>
@@ -172,7 +172,7 @@ export default function ComplianceAccordion() {
             Computing, internet and access to evidence-based resources for academics and research.
           </p>
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ Add library hours, seating, digital-library details — placeholders. ]</span>
+            <span className="italic font-mono text-xs">[ Add library hours, seating, digital-library details - placeholders. ]</span>
           </p>
         </div>
       ),
@@ -184,7 +184,7 @@ export default function ComplianceAccordion() {
       content: (
         <div className="space-y-3 text-xs sm:text-sm text-gray-800 leading-relaxed">
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ Resident health cover / medical benefits, occupational-safety provisions, immunisation, and any insurance — placeholders. ]</span>
+            <span className="italic font-mono text-xs">[ Resident health cover / medical benefits, occupational-safety provisions, immunisation, and any insurance - placeholders. ]</span>
           </p>
         </div>
       ),
@@ -199,7 +199,7 @@ export default function ComplianceAccordion() {
             Each resident is assigned a faculty guide/mentor who oversees academic progress and logbook review.
           </p>
           <p className="text-[#595959]">
-            <span className="italic font-mono text-xs">[ Add details of academic counselling, wellness/psychological support, and pastoral/spiritual-care support available to residents — placeholders. ]</span>
+            <span className="italic font-mono text-xs">[ Add details of academic counselling, wellness/psychological support, and pastoral/spiritual-care support available to residents - placeholders. ]</span>
           </p>
         </div>
       ),

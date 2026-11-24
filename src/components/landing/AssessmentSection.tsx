@@ -27,7 +27,7 @@ export default function AssessmentSection() {
                       Centralised Formative Assessment Test (FAT)
                     </h4>
                     <p className="text-gray-600 font-normal">
-                      A centralised Formative Assessment Test (FAT) is conducted by NBEMS — during the <strong>2nd year for 3-year courses</strong> and the <strong>1st year for 2-year courses</strong> — comprising a theory examination followed by workplace-based assessment.
+                      A centralised Formative Assessment Test (FAT) is conducted by NBEMS - during the <strong>2nd year for 3-year courses</strong> and the <strong>1st year for 2-year courses</strong> - comprising a theory examination followed by workplace-based assessment.
                     </p>
                   </div>
 
