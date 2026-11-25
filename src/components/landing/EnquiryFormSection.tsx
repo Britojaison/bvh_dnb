@@ -49,7 +49,7 @@ export default function EnquiryFormSection() {
                   <div>
                     <span className="block text-xs text-slate-300">Hospital Board / Academic Extn</span>
                     <span className="font-semibold text-white">022 2845 5555 / 2945 2500</span>
-                    <span className="block text-[11px] text-slate-300">Mon–Sat: 9:00 AM – 5:00 PM</span>
+                    <span className="block text-[11px] text-slate-300">Mon-Sat: 9:00 AM - 5:00 PM</span>
                   </div>
                 </div>
 

@@ -930,7 +930,7 @@ export default function PaediatricsSpokePage() {
         </section>
 
         {/* 12. Resident & Faculty Voices (§12 - Spec 5.8: Video cards + text pull quotes) */}
-        {/* Embed Paediatrics faculty and resident testimonial films from the 10 July shoot; add 1–2 text pull-quotes. */}
+        {/* Embed Paediatrics faculty and resident testimonial films from the 10 July shoot; add 1-2 text pull-quotes. */}
         <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mb-12">
@@ -1045,12 +1045,12 @@ export default function PaediatricsSpokePage() {
               </div>
 
               {/* Grid: Contact Coordinator Card + Academic Enquiry Form */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl flex flex-col justify-between h-full">
                   <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
                     Contact - Academic Cell / DNB Coordinator
                   </h3>
-                  <div className="space-y-5 text-sm">
+                  <div className="space-y-5 text-sm flex-1 flex flex-col justify-between">
                     <div className="flex items-start gap-3">
                       <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 text-[#C8862B]">
                         <User className="w-5 h-5" />

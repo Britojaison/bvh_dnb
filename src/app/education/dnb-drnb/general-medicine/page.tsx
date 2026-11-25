@@ -430,7 +430,7 @@ export default function GeneralMedicineSpokePage() {
                 <span>Numbers to confirm</span>
               </h3>
               <p className="text-xs sm:text-sm font-mono text-[#595959] bg-white p-3.5 rounded-lg border border-gray-200">
-                [ Add 2–3 department metrics - annual medical admissions, ICU exposure, OPD footfall - placeholders. ]
+                [ Add 2-3 department metrics - annual medical admissions, ICU exposure, OPD footfall - placeholders. ]
               </p>
             </div>
           </div>
@@ -949,7 +949,7 @@ export default function GeneralMedicineSpokePage() {
         </section>
 
         {/* 12. Resident & Faculty Voices (§12 - Spec 5.8: Video cards + text pull quotes) */}
-        {/* Embed General Medicine faculty and resident testimonial films from the 10 July shoot; add 1–2 text pull-quotes. */}
+        {/* Embed General Medicine faculty and resident testimonial films from the 10 July shoot; add 1-2 text pull-quotes. */}
         <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mb-12">
@@ -1064,12 +1064,12 @@ export default function GeneralMedicineSpokePage() {
               </div>
 
               {/* Grid: Contact Coordinator Card + Academic Enquiry Form */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl flex flex-col justify-between h-full">
                   <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
                     Contact - Academic Cell / DNB Coordinator
                   </h3>
-                  <div className="space-y-5 text-sm">
+                  <div className="space-y-5 text-sm flex-1 flex flex-col justify-between">
                     <div className="flex items-start gap-3">
                       <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 text-[#C8862B]">
                         <User className="w-5 h-5" />
@@ -1124,7 +1124,7 @@ export default function GeneralMedicineSpokePage() {
                   </div>
                 </div>
 
-                <div className="lg:col-span-7 bg-white text-gray-900 p-7 sm:p-8 rounded-2xl border border-gray-200 shadow-2xl">
+                <div className="lg:col-span-7 bg-white text-gray-900 p-7 sm:p-8 rounded-2xl border border-gray-200 shadow-2xl flex flex-col justify-between h-full">
                   {formSubmitted ? (
                     <div className="text-center py-10">
                       <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto mb-3" />

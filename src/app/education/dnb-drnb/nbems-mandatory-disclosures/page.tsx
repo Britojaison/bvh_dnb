@@ -2,6 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 import {
   Building2,
   FileText,
@@ -23,43 +26,51 @@ import {
 
 export default function NBEMSMandatoryDisclosuresPage() {
   return (
-    <div className="min-h-screen bg-white text-[#1C2D4A]">
-      {/* Banner / Header */}
-      <section className="relative w-full py-16 sm:py-24 bg-gradient-to-r from-[#0F1D33] via-[#1F3864] to-[#1F3864] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 mb-4 font-medium flex-wrap">
-            <Link href="/" className="hover:text-white transition">Home</Link>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <Link href="/education/dnb-drnb" className="hover:text-white transition">Postgraduate Medical Education</Link>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-[#C8862B] font-semibold">NBEMS Mandatory Disclosures</span>
-          </div>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
 
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold tracking-wide uppercase text-blue-100 mb-6">
-            <ShieldCheck className="w-4 h-4 text-[#C8862B]" />
-            Statutory & Regulatory Compliance
-          </div>
-
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
-            NBEMS Mandatory Disclosures
-          </h1>
-
-          <p className="text-base sm:text-lg text-blue-100/90 max-w-4xl font-normal leading-relaxed mb-6">
-            In compliance with the directive of the National Board of Examinations in Medical Sciences (NBEMS), New Delhi - “Mandatory disclosure by NBEMS Accredited Hospitals / Medical Institutions” - Bhaktivedanta Hospital & Research Institute publishes below the essential information relating to its training infrastructure, clinical workload and other prescribed particulars, in the proforma notified by NBEMS. This page is reviewed and updated during the first week of every quarter, or immediately upon any material change, whichever is earlier.
-          </p>
-
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#C8862B]/20 border border-[#C8862B]/50 text-white text-xs sm:text-sm font-semibold">
-            <Clock className="w-4 h-4 text-[#C8862B]" />
-            <span>Last reviewed and updated on: <span className="text-[#EAF0F7] font-medium">[DD Month 2026]</span></span>
+      <main className="flex-grow">
+        {/* Breadcrumb banner */}
+        <div className="bg-[#EAF0F7] py-2.5 border-b border-gray-200 text-xs text-[#595959]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+            <Link href="/education/dnb-drnb" className="hover:text-[#1F3864]">Home</Link>
+            <span>&rsaquo;</span>
+            <Link href="/education/dnb-drnb" className="hover:text-[#1F3864]">DNB &amp; DrNB Programmes</Link>
+            <span>&rsaquo;</span>
+            <span className="text-[#1F3864] font-semibold">NBEMS Mandatory Disclosures</span>
           </div>
         </div>
-      </section>
+
+        {/* Banner / Header */}
+        <section className="relative w-full text-white overflow-hidden py-24 sm:py-32 lg:py-40 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 border-b-4 border-[#C8862B]">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold tracking-wide uppercase text-[#D5E8F0] mb-6">
+                <ShieldCheck className="w-4 h-4 text-[#C8862B]" />
+                Statutory &amp; Regulatory Compliance
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-serif font-bold !text-white tracking-tight leading-[1.2] mb-6 drop-shadow-md">
+                NBEMS Mandatory Disclosures
+              </h1>
+
+              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-6 drop-shadow-sm max-w-3xl">
+                In compliance with the directive of the National Board of Examinations in Medical Sciences (NBEMS), New Delhi - “Mandatory disclosure by NBEMS Accredited Hospitals / Medical Institutions” - Bhaktivedanta Hospital &amp; Research Institute publishes below the essential information relating to its training infrastructure, clinical workload and other prescribed particulars, in the proforma notified by NBEMS. This page is reviewed and updated during the first week of every quarter, or immediately upon any material change, whichever is earlier.
+              </p>
+
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#C8862B]/20 border border-[#C8862B]/50 text-white text-xs sm:text-sm font-semibold">
+                <Clock className="w-4 h-4 text-[#C8862B]" />
+                <span>Last reviewed and updated on: <span className="text-[#EAF0F7] font-medium">[DD Month 2026]</span></span>
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* SECTION 1: General Information of the Institution */}
-      <section className="py-14 sm:py-18 bg-white">
+      <section className="py-14 sm:py-18 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1F3864] mb-2">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-2">
               General Information of the Institution
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
@@ -173,10 +184,10 @@ export default function NBEMSMandatoryDisclosuresPage() {
       </section>
 
       {/* SECTION 2: Clinical Facilities & Institutional Infrastructure */}
-      <section className="py-14 sm:py-18 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
+      <section className="py-14 sm:py-18 bg-[#EAF0F7]/50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1F3864] mb-2">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-2">
               Clinical Facilities & Institutional Infrastructure
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
@@ -377,10 +388,10 @@ export default function NBEMSMandatoryDisclosuresPage() {
       </section>
 
       {/* SECTION 3: Financial & Administrative Disclosures */}
-      <section className="py-14 sm:py-18 bg-white">
+      <section className="py-14 sm:py-18 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1F3864] mb-2">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-2">
               Financial & Administrative Disclosures
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
@@ -451,10 +462,10 @@ export default function NBEMSMandatoryDisclosuresPage() {
       </section>
 
       {/* SECTION 4: Academic Environment & Research */}
-      <section className="py-14 sm:py-18 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
+      <section className="py-14 sm:py-18 bg-[#EAF0F7]/50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1F3864] mb-2">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-2">
               Academic Environment & Research
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
@@ -500,10 +511,10 @@ export default function NBEMSMandatoryDisclosuresPage() {
       </section>
 
       {/* SECTION 5: Grievance Redressal & Anti-Ragging */}
-      <section className="py-14 sm:py-18 bg-white">
+      <section className="py-14 sm:py-18 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1F3864] mb-2">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-2">
               Grievance Redressal & Anti-Ragging
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
@@ -590,6 +601,9 @@ export default function NBEMSMandatoryDisclosuresPage() {
           </p>
         </div>
       </section>
+      </main>
+
+      <Footer />
     </div>
   );
 }

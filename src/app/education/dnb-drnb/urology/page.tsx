@@ -2,10 +2,15 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { PLACEHOLDER_IMAGE } from '@/lib/constants';
 import Image from 'next/image';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 import {
   ChevronRight,
   ChevronDown,
+  Quote,
   Award,
   CheckCircle2,
   FileText,
@@ -104,67 +109,105 @@ export default function UrologyPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#1C2D4A]">
-      {/* SECTION 1: Department Banner */}
-      <section className="relative w-full py-36 sm:py-48 lg:py-60 min-h-[580px] lg:min-h-[680px] flex items-center bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 text-white overflow-hidden">
-        <div className="absolute inset-0 -z-10 mix-blend-multiply opacity-30">
-          <Image
-            src="/images/department-urology.jpg"
-            alt="Urology Operating Theatre and Endourology Suite at BVH"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
+
+      <main className="flex-grow">
+        {/* Breadcrumb banner */}
+        <div className="bg-[#EAF0F7] py-2.5 border-b border-gray-200 text-xs text-[#595959]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+            <Link href="/education/dnb-drnb" className="hover:text-[#1F3864]">Home</Link>
+            <span>&rsaquo;</span>
+            <Link href="/education/dnb-drnb" className="hover:text-[#1F3864]">DNB &amp; DrNB Programmes</Link>
+            <span>&rsaquo;</span>
+            <span className="text-[#1F3864] font-semibold">DrNB Urology</span>
+          </div>
         </div>
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 mb-4 font-medium flex-wrap">
-            <Link href="/" className="hover:text-white transition">Home</Link>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <Link href="/education/dnb-drnb" className="hover:text-white transition">Postgraduate Medical Education</Link>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-[#C8862B] font-semibold">DrNB Urology</span>
+
+        {/* SECTION 1: Department Banner */}
+        <section className="relative w-full text-white overflow-hidden py-36 sm:py-48 lg:py-60 min-h-[580px] lg:min-h-[680px] flex items-center border-b-4 border-[#C8862B]">
+          {/* Full-width background photograph */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src={PLACEHOLDER_IMAGE}
+              alt="Urology Operating Theatre and Endourology Suite at BVH"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+            {/* Dual gradient overlay matching General Medicine: rich dark navy wash on the left blending into the photograph */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/85 to-[#1F3864]/50"></div>
+            <div className="absolute inset-0 bg-[#1F3864]/30 mix-blend-multiply"></div>
           </div>
 
+          {/* Overlaid Title and One-line positioning */}
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl">
+              {/* Page title */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-serif font-bold !text-white tracking-tight leading-[1.2] mb-6 drop-shadow-md">
+                DrNB Urology
+              </h1>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-            DrNB Urology
-          </h1>
+              {/* One-line positioning */}
+              <p className="text-base sm:text-lg md:text-xl text-slate-100 font-normal leading-relaxed mb-8 drop-shadow-sm max-w-3xl">
+                Three-year, NBEMS-accredited super-specialty training at a centre of excellence equipped for the full spectrum of urology and transplantation.
+              </p>
+            </div>
+          </div>
+        </section>
 
-          <p className="text-lg sm:text-xl lg:text-2xl text-blue-100/90 max-w-4xl font-normal leading-relaxed mb-8">
-            Three-year, NBEMS-accredited super-specialty training at a centre of excellence equipped for the full spectrum of urology and transplantation.
-          </p>
-
-        </div>
-      </section>
-
-      {/* SECTION 2: About the Department */}
-      <section className="py-16 sm:py-20 bg-white">
+        {/* SECTION 2: About the Department */}
+      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-6">
-              About the Department
-            </h2>
-            <div className="prose prose-lg text-[#1C2D4A]/80 space-y-4 leading-relaxed font-normal">
-              <p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div className="lg:col-span-7">
+              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-6">
+                About the Department
+              </h2>
+              <div className="space-y-4 text-base sm:text-lg text-[#1A1A1A] leading-relaxed">
+                <p>
                 The Urology Centre at Bhaktivedanta Hospital & Research Institute is a super-specialty centre of excellence, equipped with state-of-the-art technology under one roof to diagnose and treat the full spectrum of urological disease, including transplantation. All advanced treatment modalities are available at this highly specialised centre.
               </p>
-              <p>
+                  <p>
                 The Centre is supported by a team of qualified, experienced consultants, doctors, nurses and paramedical staff who keep abreast of the latest procedures and advances through regular participation in conferences and workshops, both in India and abroad.
               </p>
-              <p>
+                  <p>
                 BVH is a 300-bedded multi-specialty hospital with an NBEMS-accredited urology training programme. <span className="text-gray-500 text-sm font-normal">[ Confirm current seat intake - the site notes one trainee per year. ]</span>
               </p>
+              </div>
+            </div>
+
+            {/* Right: Department Photo Card */}
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 aspect-[4/3]">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="Urology Department - Bhaktivedanta Hospital"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1F3864]/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white p-3.5 bg-black/40 backdrop-blur-md rounded-xl border border-white/20">
+                  <span className="text-xs uppercase tracking-wider font-semibold text-[#D5E8F0] block">
+                    Urology Department
+                  </span>
+                  <span className="font-serif font-bold text-sm block">
+                    Advanced Clinical Care &amp; Resident Teaching
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 3: The Programme at BVH */}
-      <section id="programme-details" className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
+      <section id="programme-details" className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-3">
               The Programme at BVH
             </h2>
             <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
@@ -231,10 +274,10 @@ export default function UrologyPage() {
       </section>
 
       {/* SECTION 4: Why Train in Urology at BVH */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-3">
               Why Train in Urology at BVH
             </h2>
             <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
@@ -288,128 +331,128 @@ export default function UrologyPage() {
       </section>
 
       {/* SECTION 5: Clinical Exposure & Caseload */}
-      <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
-              Clinical Exposure & Caseload
-            </h2>
-            <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
-              Breadth of surgical modalities and procedure exposure for super-specialty trainees.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm mb-8">
-            <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-2">
-              Clinical Scope
-            </h3>
-            <p className="text-base text-[#1C2D4A] font-medium">
-              Endourology, laparoscopic & minimally invasive urology, open and reconstructive urology, uro-oncology, and transplantation. <span className="text-xs text-gray-500 font-normal">[ confirm scope ]</span>
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
-              <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-1">
-                Annual urological procedure volume
-              </div>
-              <div className="text-2xl sm:text-3xl font-bold text-[#1F3864]">
-                [ placeholder ]
-              </div>
-              <p className="text-xs text-gray-500 mt-2">
-                Endourology, reconstructive, and major operative cases.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
-              <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-1">
-                Transplant exposure
-              </div>
-              <div className="text-2xl sm:text-3xl font-bold text-[#1F3864]">
-                [ placeholder ]
-              </div>
-              <p className="text-xs text-gray-500 mt-2">
-                Renal transplant procedures and donor nephrectomies.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
-              <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-1">
-                Advanced Modalities
-              </div>
-              <div className="text-2xl sm:text-3xl font-bold text-[#1F3864]">
-                [ placeholder ]
-              </div>
-              <p className="text-xs text-gray-500 mt-2">
-                [ Robotic / advanced modalities if applicable - placeholder ]
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* SECTION 6: Facilities & Infrastructure */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
-              Facilities & Infrastructure
+          <div className="max-w-4xl mb-12">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight">
+              Facilities &amp; Infrastructure
             </h2>
-            <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
-              Advanced operating suites, specialized endourology towers, and multi-specialty tertiary care support.
+            <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl mt-3">
+              Advanced operating suites, specialized diagnostic infrastructure, and multi-specialty tertiary care support.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div className="bg-[#EAF0F7]/30 border border-[#D2DCE8] rounded-xl p-6">
-              <div className="w-10 h-10 rounded-lg bg-[#1F3864] text-white flex items-center justify-center mb-4">
-                <Activity className="w-5 h-5 text-[#C8862B]" />
+          {/* Showcase Grid with Photographic Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Facility 1 */}
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+              <div className="relative aspect-[16/10] bg-gray-100 overflow-hidden">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="Urology Operating & Endourology Suites - Bhaktivedanta Hospital"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3 text-white flex items-center gap-2">
+                  <Activity className="w-5 h-5 text-[#C8862B]" />
+                  <span className="font-semibold text-sm drop-shadow">Urology Operating & Endourology Suites</span>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-[#1F3864] mb-2">
-                Urology Operating & Endourology Suites
-              </h3>
-              <p className="text-sm sm:text-base text-[#1C2D4A]/80">
-                State-of-the-art urology operating and endourology facilities. <span className="text-xs text-gray-500 font-normal">[ list key equipment - placeholder ]</span>
-              </p>
+              <div className="p-5">
+                <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Urology Operating & Endourology Suites</span>
+                <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
+                  [ Urology operating and endourology suites - placeholder ]
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#EAF0F7]/30 border border-[#D2DCE8] rounded-xl p-6">
-              <div className="w-10 h-10 rounded-lg bg-[#1F3864] text-white flex items-center justify-center mb-4">
-                <Layers className="w-5 h-5 text-[#C8862B]" />
+            {/* Facility 2 */}
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+              <div className="relative aspect-[16/10] bg-gray-100 overflow-hidden">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="Renal Transplant Infrastructure - Bhaktivedanta Hospital"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3 text-white flex items-center gap-2">
+                  <Activity className="w-5 h-5 text-[#C8862B]" />
+                  <span className="font-semibold text-sm drop-shadow">Renal Transplant Infrastructure</span>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-[#1F3864] mb-2">
-                Imaging & Critical Care Support
-              </h3>
-              <p className="text-sm sm:text-base text-[#1C2D4A]/80">
-                Imaging and interventional support; ICU and peri-operative care.
-              </p>
+              <div className="p-5">
+                <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">Renal Transplant Infrastructure</span>
+                <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
+                  [ Kidney transplant OT, ICU and isolation beds - placeholder ]
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#EAF0F7]/30 border border-[#D2DCE8] rounded-xl p-6">
-              <div className="w-10 h-10 rounded-lg bg-[#1F3864] text-white flex items-center justify-center mb-4">
-                <Building2 className="w-5 h-5 text-[#C8862B]" />
+            {/* Facility 3 */}
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+              <div className="relative aspect-[16/10] bg-gray-100 overflow-hidden">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="24x7 Diagnostic & Critical Care - Bhaktivedanta Hospital"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3 text-white flex items-center gap-2">
+                  <Activity className="w-5 h-5 text-[#C8862B]" />
+                  <span className="font-semibold text-sm drop-shadow">24x7 Diagnostic & Critical Care</span>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-[#1F3864] mb-2">
-                Tertiary Hospital Ecosystem
-              </h3>
-              <p className="text-sm sm:text-base text-[#1C2D4A]/80">
-                300-bedded multi-specialty hospital backing the programme. <span className="text-xs text-gray-500 font-normal">[verify]</span>
-              </p>
+              <div className="p-5">
+                <span className="text-xs font-semibold text-[#1F3864] block mb-1 uppercase tracking-wider">24x7 Diagnostic & Critical Care</span>
+                <p className="text-sm font-mono text-[#595959] bg-[#EAF0F7]/40 p-3 rounded-lg border border-gray-200">
+                  [ 24x7 diagnostic pathology, radiology, HDU & ICU support ]
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-lg text-xs sm:text-sm text-gray-600">
-            <span className="font-semibold text-[#1F3864]">Specialized Equipment: </span>
-            [ Lithotripsy, laser, laparoscopy/robotics, transplant facilities - placeholders ]
+          {/* Academic Infrastructure: Simulation, Seminar Room & Library */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 bg-[#EAF0F7]/50 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-white text-[#2E75B6] flex items-center justify-center flex-shrink-0 shadow-sm border border-[#D5E8F0]">
+                <Sparkles className="w-6 h-6 text-[#C8862B]" />
+              </div>
+              <div className="flex-grow">
+                <h3 className="font-serif font-bold text-base text-[#1F3864] mb-1">
+                  Skills / Simulation Facilities &amp; Seminar Room
+                </h3>
+                <p className="text-sm font-mono text-[#595959] bg-white p-3 rounded-lg border border-gray-200 mt-2">
+                  [ Skills / simulation facilities, seminar room - placeholder ]
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 bg-[#EAF0F7]/50 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-white text-[#2E75B6] flex items-center justify-center flex-shrink-0 shadow-sm border border-[#D5E8F0]">
+                <BookOpen className="w-6 h-6 text-[#2E75B6]" />
+              </div>
+              <div className="flex-grow">
+                <h3 className="font-serif font-bold text-base text-[#1F3864] mb-1">
+                  Library &amp; E-Resources Access
+                </h3>
+                <p className="text-sm text-gray-800 leading-relaxed mt-1">
+                  Library and e-resources access for all residents. <span className="font-mono text-xs text-[#595959] bg-white px-2 py-0.5 rounded border border-gray-200">[ confirm details ]</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 7: Faculty */}
-      <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
+      <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-3">
               Faculty
             </h2>
             <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
@@ -423,8 +466,13 @@ export default function UrologyPage() {
               Head of Department
             </h3>
             <div className="bg-white rounded-xl border border-[#D2DCE8] p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 max-w-3xl">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#1F3864]/10 border-2 border-[#1F3864] flex items-center justify-center text-[#1F3864] flex-shrink-0">
-                <User className="w-12 h-12" />
+              <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-[#D5E8F0] bg-gray-100 flex-shrink-0 shadow-inner">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="Head of Department"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="text-center sm:text-left flex-grow">
                 <span className="inline-block px-3 py-1 rounded-full bg-[#1F3864]/10 text-[#1F3864] text-xs font-semibold mb-2">
@@ -458,8 +506,13 @@ export default function UrologyPage() {
                   className="bg-white rounded-xl border border-[#D2DCE8] p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between"
                 >
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-14 h-14 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-[#1F3864] flex-shrink-0">
-                      <User className="w-7 h-7" />
+                    <div className="relative w-14 h-14 rounded-full overflow-hidden border border-[#D5E8F0] bg-gray-100 flex-shrink-0 shadow-sm">
+                      <Image
+                        src={PLACEHOLDER_IMAGE}
+                        alt={f.name}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                     <div>
                       <h4 className="text-base font-bold text-[#1F3864]">
@@ -491,10 +544,10 @@ export default function UrologyPage() {
       </section>
 
       {/* SECTION 8: Weekly Academic Schedule */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-3">
               Weekly Academic Schedule
             </h2>
             <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
@@ -560,10 +613,10 @@ export default function UrologyPage() {
       </section>
 
       {/* SECTION 9: Your Training Journey (Figure 6 - 3 Nodes for DrNB) */}
-      <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
+      <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-3">
               Your Training Journey
             </h2>
             <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
@@ -574,7 +627,7 @@ export default function UrologyPage() {
           {/* Horizontal Timeline (3 nodes for DrNB) */}
           <div className="relative max-w-5xl mx-auto px-4 py-8">
             {/* Continuous Blue Baseline */}
-            <div className="hidden md:block absolute top-[68px] left-[10%] right-[10%] h-[3px] bg-[#1F3864] -z-0" />
+            <div className="hidden md:block absolute top-[102px] left-[10%] right-[10%] h-[3px] bg-[#1F3864] -z-0" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 relative z-10">
               {/* YEAR 1 */}
@@ -583,7 +636,7 @@ export default function UrologyPage() {
                   YEAR 1
                 </div>
                 {/* Node */}
-                <div className="w-7 h-7 rounded-full bg-[#1F3864] border-4 border-white shadow-md mb-6 hidden md:block" />
+                <div className="w-7 h-7 rounded-full bg-[#1F3864] border-4 border-white shadow-md mb-6 hidden md:block z-10" />
                 <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm w-full">
                   <h3 className="font-bold text-base text-[#1F3864] mb-2">
                     Foundation
@@ -600,7 +653,7 @@ export default function UrologyPage() {
                   YEAR 2
                 </div>
                 {/* Node */}
-                <div className="w-7 h-7 rounded-full bg-[#1F3864] border-4 border-white shadow-md mb-6 hidden md:block" />
+                <div className="w-7 h-7 rounded-full bg-[#1F3864] border-4 border-white shadow-md mb-6 hidden md:block z-10" />
                 <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm w-full">
                   <h3 className="font-bold text-base text-[#1F3864] mb-2">
                     Consolidation
@@ -617,7 +670,7 @@ export default function UrologyPage() {
                   YEAR 3
                 </div>
                 {/* Node */}
-                <div className="w-7 h-7 rounded-full bg-[#1F3864] border-4 border-white shadow-md mb-6 hidden md:block" />
+                <div className="w-7 h-7 rounded-full bg-[#1F3864] border-4 border-white shadow-md mb-6 hidden md:block z-10" />
                 <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm w-full">
                   <h3 className="font-bold text-base text-[#1F3864] mb-2">
                     Mastery
@@ -633,10 +686,10 @@ export default function UrologyPage() {
       </section>
 
       {/* SECTION 10: Thesis & Research */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-6">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-6">
               Thesis & Research
             </h2>
             <div className="bg-[#EAF0F7]/40 border-l-4 border-[#1F3864] p-6 rounded-r-xl mb-6">
@@ -652,286 +705,281 @@ export default function UrologyPage() {
       </section>
 
       {/* SECTION 11: Outcomes (Spec 5.9 Dashboard) */}
-      <section className="py-16 sm:py-20 bg-[#EAF0F7]/50 border-y border-[#D2DCE8]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
-              Outcomes
-            </h2>
-            <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
-              Specialty-specific outcomes (to be supplied)
-            </p>
-          </div>
-
-          {/* 3 Headline Metric Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
-              <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-2">
-                DrNB Final (Exit) Examination pass rate - Urology
-              </div>
-              <div className="text-3xl font-bold text-[#1F3864] mb-2">
-                [ % - placeholder ]
-              </div>
-              <p className="text-xs text-gray-500">
-                National board exit examination qualifying record.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
-              <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-2">
-                Alumni trained & current positions
-              </div>
-              <div className="text-xl font-bold text-[#1F3864] mb-2">
-                [ placeholder ]
-              </div>
-              <p className="text-xs text-gray-500">
-                Urology consultants and academic appointments.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl border border-[#D2DCE8] shadow-sm">
-              <div className="text-xs uppercase tracking-wider font-semibold text-[#1F3864]/70 mb-2">
-                Resident awards / achievements
-              </div>
-              <div className="text-xl font-bold text-[#1F3864] mb-2">
-                [ placeholder ]
-              </div>
-              <p className="text-xs text-gray-500">
-                Prizes at national urological association conferences.
-              </p>
-            </div>
-          </div>
-
-          {/* Alumni Highlight Strip */}
-          <div className="bg-[#1F3864] text-white p-6 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>
-              <h4 className="font-bold text-base text-white">Super-Specialty Career Pathways</h4>
-              <p className="text-sm text-blue-100">
-                Our DrNB graduates lead urology and kidney transplant units across leading academic and healthcare networks across India.
-              </p>
-            </div>
-            <Link
-              href="/education/dnb-drnb"
-              className="px-4 py-2 rounded-lg bg-[#C8862B] text-white text-xs sm:text-sm font-semibold whitespace-nowrap hover:bg-[#b07424] transition"
-            >
-              Institutional Outcomes
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* SECTION 12: Resident & Faculty Voices */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F3864] mb-3">
-              Resident & Faculty Voices
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1F3864] tracking-tight mb-3">
+              Resident &amp; Faculty Voices
             </h2>
             <p className="text-base sm:text-lg text-[#1C2D4A]/70 max-w-3xl">
-              Perspectives on surgical training, operative case volume, and mentor-apprentice culture in Urology at BVH.
+              Real perspectives from our teaching faculty, current resident doctors, and alumni.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            {/* Faculty Card */}
-            <div className="bg-[#EAF0F7]/30 border border-[#D2DCE8] rounded-xl overflow-hidden shadow-sm flex flex-col">
-              <div className="relative aspect-video bg-[#1F3864]/80 flex items-center justify-center text-white">
-                <Play className="w-12 h-12 text-[#C8862B] opacity-80" />
-                <span className="absolute bottom-3 left-4 text-xs bg-black/60 px-2 py-1 rounded text-white/90">
-                  Faculty Film - 10 July shoot
-                </span>
+          {/* Video Cards from 10 July Shoot */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            {/* Faculty Video Card & Pull-Quote */}
+            <div className="bg-[#EAF0F7]/40 rounded-2xl border border-gray-200 overflow-hidden shadow-sm flex flex-col justify-between">
+              <div className="relative aspect-[16/9] bg-gray-900 group cursor-pointer">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="Urology Faculty Interview - Bhaktivedanta Hospital"
+                  fill
+                  className="object-cover opacity-80 group-hover:opacity-90 transition"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full bg-[#C8862B] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <Play className="w-6 h-6 fill-current ml-1" />
+                  </div>
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 text-white text-xs bg-black/60 px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/20">
+                  Faculty Testimonial Film (10 July shoot)
+                </div>
               </div>
-              <div className="p-6 flex-grow flex flex-col justify-between">
-                <blockquote className="text-sm sm:text-base italic text-[#1C2D4A]/90 mb-4">
-                  “ [ pull-quote ] ”
-                </blockquote>
-                <div>
-                  <h4 className="font-bold text-[#1F3864] text-base">Faculty - [ name ]</h4>
-                  <p className="text-xs text-gray-500">Department of Urology, BVH</p>
+
+              <div className="p-6 flex flex-col justify-between flex-grow">
+                <div className="mb-4">
+                  <Quote className="w-7 h-7 text-[#C8862B] mb-2 opacity-70" />
+                  <p className="text-sm sm:text-base italic text-gray-800 leading-relaxed">
+                    &ldquo;[ pull-quote ]&rdquo;
+                  </p>
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                  <span className="font-serif font-bold text-sm text-[#1F3864] block">
+                    Faculty - [ name ]
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Resident Card */}
-            <div className="bg-[#EAF0F7]/30 border border-[#D2DCE8] rounded-xl overflow-hidden shadow-sm flex flex-col">
-              <div className="relative aspect-video bg-[#1F3864]/80 flex items-center justify-center text-white">
-                <Play className="w-12 h-12 text-[#C8862B] opacity-80" />
-                <span className="absolute bottom-3 left-4 text-xs bg-black/60 px-2 py-1 rounded text-white/90">
-                  Resident Film - 10 July shoot
-                </span>
+            {/* Resident Video Card & Pull-Quote */}
+            <div className="bg-[#EAF0F7]/40 rounded-2xl border border-gray-200 overflow-hidden shadow-sm flex flex-col justify-between">
+              <div className="relative aspect-[16/9] bg-gray-900 group cursor-pointer">
+                <Image
+                  src={PLACEHOLDER_IMAGE}
+                  alt="Urology Resident Interview - Bhaktivedanta Hospital"
+                  fill
+                  className="object-cover opacity-80 group-hover:opacity-90 transition"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full bg-[#2E75B6] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <Play className="w-6 h-6 fill-current ml-1" />
+                  </div>
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 text-white text-xs bg-black/60 px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/20">
+                  Resident Testimonial Film (10 July shoot)
+                </div>
               </div>
-              <div className="p-6 flex-grow flex flex-col justify-between">
-                <blockquote className="text-sm sm:text-base italic text-[#1C2D4A]/90 mb-4">
-                  “ [ pull-quote ] ”
-                </blockquote>
-                <div>
-                  <h4 className="font-bold text-[#1F3864] text-base">Resident - [ name, batch ]</h4>
-                  <p className="text-xs text-gray-500">DrNB Urology, BVH</p>
+
+              <div className="p-6 flex flex-col justify-between flex-grow">
+                <div className="mb-4">
+                  <Quote className="w-7 h-7 text-[#C8862B] mb-2 opacity-70" />
+                  <p className="text-sm sm:text-base italic text-gray-800 leading-relaxed">
+                    &ldquo;[ pull-quote ]&rdquo;
+                  </p>
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                  <span className="font-serif font-bold text-sm text-[#1F3864] block">
+                    Resident - [ name, batch ]
+                  </span>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-lg text-xs sm:text-sm text-gray-600">
-            [[ Embed Urology faculty and resident testimonial films from the 10 July shoot; add 1–2 text pull-quotes. ]]
           </div>
         </div>
       </section>
 
       {/* SECTION 13: How to Apply / Enquire */}
-      <section id="apply-enquire" className="py-16 sm:py-20 bg-[#1F3864] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3">
-              How to Apply / Enquire
-            </h2>
-            <p className="text-base sm:text-lg text-blue-100/80">
-              Admission pathway, verification procedures, and direct contact with our Academic Cell.
-            </p>
+        <section id="enquiry-form" className="py-16 sm:py-24 bg-[#1F3864] text-white relative overflow-hidden scroll-mt-20 border-y-4 border-[#C8862B]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0F1D33]/95 via-[#1F3864]/90 to-[#1F3864]/80 pointer-events-none"></div>
+
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div>
+              <div className="max-w-4xl mb-12">
+                <h2 className="text-3xl sm:text-4xl font-serif font-bold !text-white tracking-tight mb-6 drop-shadow-sm">
+                  How to Apply / Enquire
+                </h2>
+                <div className="space-y-4 text-base sm:text-lg text-slate-100 leading-relaxed">
+                  <div className="flex items-start gap-3.5">
+                    <span className="w-7 h-7 rounded-full bg-[#C8862B] text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">
+                      1
+                    </span>
+                    <div>
+                      <p className="font-semibold text-white">Qualify NEET-SS</p>
+                      <p className="font-normal text-slate-200 text-sm sm:text-base">Qualify NEET-SS for the relevant session.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3.5">
+                    <span className="w-7 h-7 rounded-full bg-[#C8862B] text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">
+                      2
+                    </span>
+                    <div>
+                      <p className="font-semibold text-white">Centralised Counselling</p>
+                      <p className="font-normal text-slate-200 text-sm sm:text-base">Participate in the centralised counselling and select DrNB Urology at BVH.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3.5">
+                    <span className="w-7 h-7 rounded-full bg-[#C8862B] text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">
+                      3
+                    </span>
+                    <div>
+                      <p className="font-semibold text-white">Joining &amp; Verification</p>
+                      <p className="font-normal text-slate-200 text-sm sm:text-base">Report to BVH with original documents for verification and joining.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Grid: Contact Coordinator Card + Academic Enquiry Form */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div className="lg:col-span-5 bg-white/10 backdrop-blur-md text-white p-7 sm:p-8 rounded-2xl border border-white/20 shadow-xl flex flex-col justify-between h-full">
+                  <h3 className="font-serif font-bold text-xl !text-white mb-6 pb-3 border-b border-white/15">
+                    Contact - Academic Cell / DNB Coordinator
+                  </h3>
+                  <div className="space-y-5 text-sm flex-1 flex flex-col justify-between">
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 text-[#C8862B]">
+                        <User className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="block text-xs text-[#D5E8F0] font-medium">Name &amp; designation:</span>
+                        <span className="font-mono text-sm text-slate-100">[ placeholder ]</span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 text-[#C8862B]">
+                        <Mail className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="block text-xs text-[#D5E8F0] font-medium">Academic enquiry email:</span>
+                        <span className="font-mono text-sm text-slate-100">[ placeholder ]</span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 text-[#C8862B]">
+                        <Phone className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="block text-xs text-[#D5E8F0] font-medium">Phone:</span>
+                        <span className="font-mono text-sm text-slate-100">[ placeholder ]</span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 text-[#C8862B]">
+                        <Building2 className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="block text-xs text-[#D5E8F0] font-medium">Address:</span>
+                        <span className="text-sm text-slate-100 block">
+                          Bhaktivedanta Hospital &amp; Research Institute, Mira Road (E), Mumbai.
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-white/15">
+                      <a
+                        href="#enquiry-form"
+                        className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-lg bg-[#C8862B] text-white font-semibold text-sm hover:brightness-110 shadow-md transition"
+                      >
+                        <span>Apply / Enquire</span>
+                        <ChevronRight className="w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-7 bg-white text-gray-900 p-7 sm:p-8 rounded-2xl border border-gray-200 shadow-2xl flex flex-col justify-between h-full">
+                  <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                    <div>
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#1F3864] mb-1">
+                        Have questions about DrNB Urology?
+                      </h3>
+                      <p className="text-xs text-[#595959]">
+                        Submit an inquiry directly to the Academic Cell regarding operative rotations, transplant exposure, hostel accommodations, or seat allotment.
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-700 mb-1">
+                          Full Name *
+                        </label>
+                        <input
+                          type="text"
+                          required
+                          placeholder="Dr. Candidate Name"
+                          className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#2E75B6]"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-700 mb-1">
+                          Email Address *
+                        </label>
+                        <input
+                          type="email"
+                          required
+                          placeholder="doctor@example.com"
+                          className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#2E75B6]"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-700 mb-1">
+                          Phone Number *
+                        </label>
+                        <input
+                          type="tel"
+                          required
+                          placeholder="+91 98765 43210"
+                          className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#2E75B6]"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-700 mb-1">
+                          NEET-SS Roll / Rank (Optional)
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="e.g. Rank 320"
+                          className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#2E75B6]"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-700 mb-1">
+                        Your Enquiry / Message *
+                      </label>
+                      <textarea
+                        rows={4}
+                        required
+                        placeholder="Specify your question regarding DrNB Urology at BVH..."
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#2E75B6]"
+                      ></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full sm:w-auto px-8 py-3 bg-[#C8862B] text-white font-semibold rounded-lg hover:brightness-105 transition flex items-center justify-center gap-2 shadow-md text-sm"
+                    >
+                      <span>Submit Academic Enquiry</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
+      </main>
 
-          {/* 3 Step Process */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-sm">
-              <div className="w-10 h-10 rounded-full bg-[#C8862B] text-white font-bold flex items-center justify-center text-lg mb-4">
-                1
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Qualify NEET-SS</h3>
-              <p className="text-sm text-blue-100/80 leading-relaxed font-normal">
-                Qualify NEET-SS for the relevant session.
-              </p>
-            </div>
-
-            <div className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-sm">
-              <div className="w-10 h-10 rounded-full bg-[#C8862B] text-white font-bold flex items-center justify-center text-lg mb-4">
-                2
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Centralised Counselling</h3>
-              <p className="text-sm text-blue-100/80 leading-relaxed font-normal">
-                Participate in the centralised counselling and select DrNB Urology at BVH.
-              </p>
-            </div>
-
-            <div className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-sm">
-              <div className="w-10 h-10 rounded-full bg-[#C8862B] text-white font-bold flex items-center justify-center text-lg mb-4">
-                3
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Joining & Verification</h3>
-              <p className="text-sm text-blue-100/80 leading-relaxed font-normal">
-                Report to BVH with original documents for verification and joining.
-              </p>
-            </div>
-          </div>
-
-          {/* Contact Card & Inquiry CTA Form */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-5 bg-white text-[#1C2D4A] rounded-xl p-6 sm:p-8 shadow-lg border border-[#D2DCE8]">
-              <h3 className="text-xl font-bold text-[#1F3864] mb-4">
-                Contact - Academic Cell / DNB Coordinator
-              </h3>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <span className="block text-xs uppercase tracking-wider text-gray-500 font-semibold">
-                    Name & designation
-                  </span>
-                  <p className="text-[#1C2D4A] font-semibold mt-0.5">[ placeholder ]</p>
-                </div>
-                <div>
-                  <span className="block text-xs uppercase tracking-wider text-gray-500 font-semibold">
-                    Academic enquiry email
-                  </span>
-                  <p className="text-[#1C2D4A] font-semibold mt-0.5">[ placeholder ]</p>
-                </div>
-                <div>
-                  <span className="block text-xs uppercase tracking-wider text-gray-500 font-semibold">
-                    Phone
-                  </span>
-                  <p className="text-[#1C2D4A] font-semibold mt-0.5">[ placeholder ]</p>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <Link
-                  href="/education/dnb-drnb#enquire"
-                  className="w-full inline-flex items-center justify-center px-5 py-3 rounded-lg bg-[#1F3864] text-white font-semibold text-sm hover:bg-[#152747] transition shadow"
-                >
-                  Apply / Enquire Online
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-                <p className="text-[11px] text-gray-500 text-center mt-2">
-                  [[ Use an &apos;Apply / Enquire&apos; academic CTA - not the clinical &apos;Book Appointment&apos; button. ]]
-                </p>
-              </div>
-            </div>
-
-            <div className="lg:col-span-7 bg-white/10 border border-white/20 rounded-xl p-6 sm:p-8 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-white mb-2">
-                Have questions about DrNB Urology?
-              </h3>
-              <p className="text-sm text-blue-100/90 mb-6 font-normal">
-                Submit an inquiry directly to the Academic Cell regarding operative rotations, transplant exposure, hostel accommodations, or seat allotment.
-              </p>
-
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-medium text-blue-100 mb-1">Full Name</label>
-                    <input
-                      type="text"
-                      placeholder="Dr. Candidate Name"
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#C8862B]"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-blue-100 mb-1">Email Address</label>
-                    <input
-                      type="email"
-                      placeholder="doctor@example.com"
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#C8862B]"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-medium text-blue-100 mb-1">Phone Number</label>
-                    <input
-                      type="tel"
-                      placeholder="+91 98765 43210"
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#C8862B]"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-blue-100 mb-1">NEET-SS Roll / Rank (Optional)</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. Rank 320"
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#C8862B]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-medium text-blue-100 mb-1">Your Enquiry / Message</label>
-                  <textarea
-                    rows={3}
-                    placeholder="Specify your question regarding DrNB Urology at BVH..."
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#C8862B]"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#C8862B] text-white font-semibold text-sm hover:bg-[#b07424] transition shadow-md"
-                >
-                  Submit Academic Enquiry
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 }

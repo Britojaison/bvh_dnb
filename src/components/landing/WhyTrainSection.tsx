@@ -38,7 +38,7 @@ const WHY_POINTS: WhyItem[] = [
   {
     icon: Hospital,
     heading: "NABH Referral Centre",
-    line: "NABH-accredited tertiary-care referral centre serving the Borivali–Dahanu belt of North Mumbai.",
+    line: "NABH-accredited tertiary-care referral centre serving the Borivali-Dahanu belt of North Mumbai.",
   },
   {
     icon: Microscope,
